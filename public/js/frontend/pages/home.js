@@ -1,1 +1,12 @@
-!function(n,e){"use strict";n(document).ready(function(){new e.Swiper(".swiper-container",{navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})})}(window.$,window.swiper);
+(function ($, sw) {
+    "use strict";
+
+    $(document).ready(function () {
+        var swiper = new sw.Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    });
+})(window.$, window.swiper);

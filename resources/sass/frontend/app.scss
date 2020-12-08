@@ -10,8 +10,12 @@
 // Swiper
 @import '~swiper/swiper-bundle';
 
+// nanogallery2
+@import '~nanogallery2/dist/css/nanogallery2.min';
+
 // Videojs plus
 @import '~videojs-plus/dist/videojs-plus';
 
 // Theme
+@import '../animation';
 @import 'theme';

@@ -16,6 +16,7 @@ mix.js('resources/js/frontend/app.js', 'public/js/frontend')
         'lodash',
         'jquery',
         'swiper',
+        'nanogallery2',
         'isotope-layout',
         'imagesloaded',
         'video.js',

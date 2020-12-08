@@ -1,9 +1,10 @@
 require('alpinejs');
 window._ = require('lodash');
 window.$ = window.jQuery = require('jquery');
-require('jquery-ui');
+require('jquery-ui/ui/effect.js');
 window.swiper = require('swiper/bundle');
 window.Isotope = require('isotope-layout');
+window.nanogallery2 = require('nanogallery2');
 window.videojs = require('video.js').default;
 require('videojs-plus');
 require('imagesloaded');

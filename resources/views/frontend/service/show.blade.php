@@ -8,72 +8,105 @@
         <div class="heading__container mx-auto"></div>
     </section>
 
-    <!-- Section: Home Call To Action -->
-    {{-- <section class="home__cta bg-dark-200">
-        <div class="container mx-auto">
-            <div class="cta flex justify-between py-8">
-                <div class="flex items-center">
-                    <h2 class="text-2xl uppercase text-white">Real estate marketing professionals</h2>
-                </div>
-                <div class="flex items-center">
-                    <button class="py-2 px-6 uppercase bg-primary text-white border border-solid border-primary hover:bg-transparent hover:text-primary rounded mb-3 sm:mb-0 mx-auto sm:mx-2 block sm:inline-block transition-colors duration-300">Get Pricing</button>
-                    <button class="py-2 px-6 uppercase text-white border border-solid border-white hover:bg-white hover:text-primary rounded mx-auto sm:mx-2 block sm:inline-block transition-colors duration-300">Book Now</button>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
     <!-- Section: Home Services -->
     <section class="home__services pt-24">
-        <div class="container-full mx-auto">
-            <div class="justify-center text-center flex flex-wrap">
-                <div class="px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl mb-10">REAL ESTATE PHOTOGRAPHY</h3>
-                    {{-- <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-600">Pure-Views Design is the superior choice for sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.</p> --}}
-                    <p><em>Using state-of-the-art equipment, our accomplished real estate photographers create extraordinary property&nbsp;images sure to capture the attention and imagination of potential buyers tenants.</em></p>
-                    <div class="mt-2"><p style="text-align: center;">We tame tricky exposures that can complicate images of architecture or landscape, HDR photography utilises wide dynamic ranges.</p>
-                    <p style="text-align: center;">Every room is meticulously enhanced to look its photogenic best. We style your room, shift furniture and use props&nbsp;to capture the perfect ambience and ensure the saleable features of your property are highlighted in every shot. Multiple exposures are taken, blended and retouched to create a flawless and vibrant image. Photos are conveniently delivered in print and web ready formats for easy printing and uploading with 24 hours.</p>
-                    <p style="text-align: center;">Our highly skilled retouching team work closely with all of our agents to make sure we showcase the property in the best light. Whether you are trying to sell or lease your Property, V-Mark Designs team of Professional Real Estate Photographers are sure to bring more buyers and potential tenants to your property to help achieve a better price. We look forward to bringing your property to life.</p>
+        <div class="container-full mx-auto px-20">
+            <div class="justify-center text-center flex flex-wrap grid grid-cols-2 gap-4">
+                <div class="flex flex-col px-12 md:px-20">
+                    <div>
+                        <h2 class="font-semibold uppercase text-3xl mb-10">REAL ESTATE PHOTOGRAPHY</h2>
+                        <p><em>Using state-of-the-art equipment, our accomplished real estate photographers create extraordinary property&nbsp;images sure to capture the attention and imagination of potential buyers tenants.</em></p>
+                        <div class="mt-2">
+                            <p style="text-align: center;">We tame tricky exposures that can complicate images of architecture or landscape, HDR photography utilises wide dynamic ranges.</p>
+                            <p style="text-align: center;">Every room is meticulously enhanced to look its photogenic best. We style your room, shift furniture and use props&nbsp;to capture the perfect ambience and ensure the saleable features of your property are highlighted in every shot. Multiple exposures are taken, blended and retouched to create a flawless and vibrant image. Photos are conveniently delivered in print and web ready formats for easy printing and uploading with 24 hours.</p>
+                            <p style="text-align: center;">Our highly skilled retouching team work closely with all of our agents to make sure we showcase the property in the best light. Whether you are trying to sell or lease your Property, V-Mark Designs team of Professional Real Estate Photographers are sure to bring more buyers and potential tenants to your property to help achieve a better price. We look forward to bringing your property to life.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col px-12 md:px-4">
+                    <div class="ba__container">
+                        <img src="https://w8.foxdsgn.com/prague/wp-content/uploads/2017/01/before.jpg" class="" alt="">
+
+                        <div class="resize">
+                            <img src="https://w8.foxdsgn.com/prague/wp-content/uploads/2017/01/after.jpg" class="" alt="">
+                        </div>
+
+                        <span class="handle">
+                            <span class="handle__wrapper">
+                                <i class="las la-arrows-alt-h"></i>
+                            </span>
+                        </span>
+                        <a href="#" class="button prev"><i class="las la-long-arrow-alt-left mr-2"></i>BEFORE</a>
+                        <a href="#" class="button reset"><i class="las la-grip-lines-vertical mr-2"></i>RESET</a>
+                        <a href="#" class="button next"><i class="las la-long-arrow-alt-right mr-2"></i>AFTER</a>
                     </div>
                 </div>
             </div>
-            <div class="services__grid py-8">
-                <div class="grid grid-cols-3 gap-1">
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/1.jpg" alt="" class="w-full align-middle">
+        </div>
+
+        <div class="container-full mx-auto pt-20">
+            <div class="services__grid">
+                <div id="showcase__gallery" class="grid grid-cols-3 gap-1">
+                    <a href="1.jpg"
+                        data-ngThumb="1.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/1.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/2.jpg" alt="" class="w-full align-middle">
+                    <a href="2.jpg"
+                        data-ngThumb="2.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/2.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/4.jpg" alt="" class="w-full align-middle">
+                    <a href="4.jpg"
+                        data-ngThumb="4.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/4.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/5.jpg" alt="" class="w-full align-middle">
+                    <a href="5.jpg"
+                        data-ngThumb="5.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/5.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/6.jpg" alt="" class="w-full align-middle">
+                    <a href="6.jpg"
+                        data-ngThumb="6.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/6.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/7.jpg" alt="" class="w-full align-middle">
+                    <a href="7.jpg"
+                        data-ngThumb="7.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/7.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/1.jpg" alt="" class="w-full align-middle">
+                    <a href="1.jpg"
+                        data-ngThumb="1.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/1.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/2.jpg" alt="" class="w-full align-middle">
+                    <a href="2.jpg"
+                        data-ngThumb="2.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/2.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/4.jpg" alt="" class="w-full align-middle">
+                    <a href="4.jpg"
+                        data-ngThumb="4.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/4.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/5.jpg" alt="" class="w-full align-middle">
+                    <a href="5.jpg"
+                        data-ngThumb="5.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/5.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/6.jpg" alt="" class="w-full align-middle">
+                    <a href="6.jpg"
+                        data-ngThumb="6.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/6.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
-                    <a href="#" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
-                        <img src="/images/services/7.jpg" alt="" class="w-full align-middle">
+                    <a href="7.jpg"
+                        data-ngThumb="7.jpg"
+                        class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
+                        {{-- <img src="/images/services/7.jpg" alt="" class="w-full align-middle"> --}}
                     </a>
                 </div>
             </div>
@@ -85,10 +118,10 @@
         <div class="container mx-auto">
             <div class="justify-center text-center flex flex-wrap">
                 <div class="max-w-2xl px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl">Other services</h3>
+                    <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Other</span> services</h3>
                 </div>
             </div>
-            <div class="latest__blog flex flex-wrap items-center py-8">
+            <div class="latest__blog flex flex-wrap py-8">
                 <article class="latest__blog__item w-4/12 md:w-12/12 px-4 first">
                     <div class="entry__image">
                         <a href="#">
@@ -145,7 +178,7 @@
         <div class="brands__container">
             <div class="justify-center text-center flex flex-wrap">
                 <div class="max-w-2xl px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl">Our Partners</h3>
+                    <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Our</span> Partners</h3>
                 </div>
             </div>
             <div class="container mx-auto">

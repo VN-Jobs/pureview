@@ -87,10 +87,10 @@
         <div class="container mx-auto">
             <div class="copyright flex justify-between">
                 <div class="flex">
-                    <span>© Copyright 2020 <a href="#" class="text-primary">Pure Views.</a> All Rights Reserved.</span>
+                    <span>© Copyright 2020 <a href="{{ route('frontend.home.index') }}" class="text-primary">Pure Views.</a> All Rights Reserved.</span>
                 </div>
                 <div class="flex">
-                    <span><a href="tel:+1234567890" class="hover:text-primary mr-8"><i class="las la-phone-volume mr-2"></i>0123 4567 890</a><a href="mailto:demo@domain.com" class="hover:text-primary"><i class="las la-envelope-open-text mr-2"></i>Email Us</a></span>
+                    <span><a href="tel:+84366811991" class="hover:text-primary mr-8"><i class="las la-phone-volume mr-2"></i>(+84) 366 811 991</a><a href="mailto:demo@domain.com" class="hover:text-primary"><i class="las la-envelope-open-text mr-2"></i>Email Us</a></span>
                 </div>
             </div>
         </div>

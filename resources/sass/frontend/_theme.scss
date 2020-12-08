@@ -29,6 +29,10 @@ button,
     @apply bg-dark-300 text-gray-1000;
 }
 
+.site__topbar a:hover {
+    @apply text-white;
+}
+
 .site__topbar {
     font-size: 13px;
 }
@@ -45,6 +49,49 @@ button,
     font-size: 14px;
 }
 
+// Header sticky
+.sticky__wrapper {
+    left: 0;
+    right: 0;
+}
+
+.sticking {
+    .sticky__wrapper {
+        top: 0;
+        position: fixed;
+        -webkit-transform: translate3d(0,0,0);
+        z-index: 111;
+        -webkit-animation-name: fade-in-down;
+        animation-name: fade-in-down;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        background-color: rgba(39, 39, 39, 0.75);
+        -webkit-backdrop-filter: blur(7px);
+        backdrop-filter: blur(7px);
+    }
+
+    .site__logo {
+        img,
+        svg {
+            height: 3rem;
+        }
+    }
+
+    .site__navigation__primary {
+        ul.nav__wrapper {
+            > li {
+                > a {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// Scroll top
 a {
     &#scroll-top {
         opacity: 0;
@@ -52,11 +99,13 @@ a {
         position: fixed;
         right: -40px;
         bottom: 1px;
-        height: 54px;
-        width: 54px;
-        line-height: 54px;
-        border-radius: 4px;
-        background: transparent;
+        height: 36px;
+        width: 40px;
+        line-height: 36px;
+        color: #fff;
+        text-align: center;
+        border-radius: 0;
+        background: #303030;
         z-index: 9;
         -webkit-transition: all .7s cubic-bezier(0.405,0.020,0.325,0.950) .2s;
         -moz-transition: all .7s cubic-bezier(0.405,0.020,0.325,0.950) .2s;
@@ -70,6 +119,103 @@ a {
             -webkit-opacity: 0.8;
             filter: alpha(opacity=80);
             visibility: visible;
+        }
+
+        &:hover {
+            opacity: 1;
+            -moz-opacity: 1;
+            -webkit-opacity: 1;
+            filter: alpha(opacity=100);
+        }
+    }
+}
+
+// Before After Container
+.ba__container {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        display: block;
+        max-width: none;
+    }
+
+    .resize {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        overflow: hidden;
+        background-size: initial;
+        background-position: initial;
+    }
+
+    .handle {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        margin-left: -2px;
+        background: #fff;
+        cursor: ew-resize;
+
+        .handle__wrapper {
+            position: absolute;
+            top: 50%;
+            color: rgba(0, 0, 0, 0.65);
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+            line-height: 30px;
+            width: 50px;
+            height: 50px;
+            margin: -25px 0 0 -25px;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(255, 255, 255, 0.3);
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all 0.3s ease;
+            box-sizing: content-box;
+
+            i {
+                line-height: 50px;
+            }
+        }
+    }
+
+    .button {
+        display: inline-block;
+        position: absolute;
+        bottom: 15px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 2.8px;
+        font-weight: 300;
+        color: #111;
+        background-color: #fff;
+        padding: 10px 15px;
+        min-width: 115px;
+        text-align: center;
+        text-transform: uppercase;
+
+        &.prev {
+            left: 15px;
+            right: auto;
+        }
+
+        &.next {
+            left: auto;
+            right: 15px;
+        }
+
+        &.reset {
+            left: auto;
+            right: auto;
+            margin-left: -58px;
         }
     }
 }

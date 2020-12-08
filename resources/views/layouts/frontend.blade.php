@@ -23,6 +23,8 @@
         @include('frontend._includes.footer')
     </div>
 
+    <a href="#top" id="scroll-top"><i class="las la-angle-up la-2x"></i></a>
+
     <!-- Scripts -->
     @include('frontend._includes._scripts')
 </body>

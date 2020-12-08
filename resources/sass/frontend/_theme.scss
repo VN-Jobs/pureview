@@ -452,3 +452,13 @@ a {
         }
     }
 }
+
+// Gallery
+#showcase__gallery {
+    &.nanogallery_gallerytheme_dark_showcase__gallery {
+        .nGY2GThumbnail {
+            border-color: #fff;
+            background: #fff;
+        }
+    }
+}

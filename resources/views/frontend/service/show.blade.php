@@ -2,6 +2,11 @@
 
 @section('title', __('Service detail page'))
 
+@push('sufscripts')
+<script src="{{ asset('vendor/nanogallery2/jquery.nanogallery2.min.js?v=' . env('APP_VERSION')) }}"></script>
+<script src="{{ asset('js/frontend/pages/service-detail.js?v=' . env('APP_VERSION')) }}"></script>
+@endpush
+
 @section('content')
     <!-- Section: Heading Slides -->
     <section class="heading__slides">
@@ -12,7 +17,7 @@
     <section class="home__services pt-24">
         <div class="container-full mx-auto px-20">
             <div class="justify-center text-center flex flex-wrap grid grid-cols-2 gap-4">
-                <div class="flex flex-col px-12 md:px-20">
+                <div class="flex flex-col px-12 md:px-4">
                     <div>
                         <h2 class="font-semibold uppercase text-3xl mb-10">REAL ESTATE PHOTOGRAPHY</h2>
                         <p><em>Using state-of-the-art equipment, our accomplished real estate photographers create extraordinary property&nbsp;images sure to capture the attention and imagination of potential buyers tenants.</em></p>
@@ -47,7 +52,16 @@
 
         <div class="container-full mx-auto pt-20">
             <div class="services__grid">
-                <div id="showcase__gallery" class="grid grid-cols-3 gap-1">
+                <div id="showcase__gallery" data-nanogallery2='{
+                    "itemsBaseURL": "http://demo.test/images/services/",
+                    "thumbnailHeight": "auto",
+                    "thumbnailWidth": "400",
+                    "thumbnailLabel": {
+                        "position": "overImageOnBottom"
+                    },
+                    "thumbnailAlignment": "center",
+                    "thumbnailOpenImage": true
+                }'>
                     <a href="1.jpg"
                         data-ngThumb="1.jpg"
                         class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">

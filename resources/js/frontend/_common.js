@@ -1,4 +1,4 @@
-(function ($, swiper, Isotope, nanogallery2) {
+(function ($, swiper, Isotope) {
     'use strict';
 
     var siteNavigationEl = '#site__navigation';
@@ -180,19 +180,6 @@
         });
     }
 
-    $("#showcase__gallery").nanogallery2({
-        thumbnailHeight:  150,
-        thumbnailWidth:   150,
-        itemsBaseURL:     'http://demo.test/images/services/',
-
-        // ### gallery content ###
-        items: [
-            { src: '1.jpg', srct: '1.jpg', title: 'Title Image 1' },
-            { src: '2.jpg', srct: '2.jpg', title: 'Title Image 2' },
-            { src: '3.jpg', srct: '3.jpg', title: 'Title Image 3' }
-        ]
-    });
-
     // $isoGallery.imagesLoaded().progress( function() {
     //     $isoGallery.isotope('layout');
     // });
@@ -206,4 +193,4 @@
     $(window).on('load', function() {
         beforeAfter();
     });
-})(window.$, window.swiper, window.Isotope, window.nanogallery2);
+})(window.$, window.swiper, window.Isotope);

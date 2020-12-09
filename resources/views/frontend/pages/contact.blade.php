@@ -2,24 +2,15 @@
 
 @section('title', __('Contact us'))
 
-@push('sufscripts')
-<script>
-    function myMap() {
-        var mapProp= {
-            center:new google.maps.LatLng(51.508742,-0.120850),
-            zoom:5,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmxIHmvSH9FoZnZ45XxWBO1laL8cNZZxM&callback=myMap"></script>
-@endpush
-
 @section('content')
     <!-- Section: Heading Slides -->
     {{-- <section class="heading__slides">
-        <div class="heading__container mx-auto"></div>
+        <div class="heading__container flex items-center mx-auto">
+            <div class="container mx-auto text-center">
+                <h2 class="heading__title font-semibold uppercase text-white text-2xl mb-4">Contact us</h2>
+                <p class="heading__desc"><em>PureView - Work 24/7</em></p>
+            </div>
+        </div>
     </section> --}}
 
     <!-- Section: Home Request -->
@@ -31,10 +22,12 @@
                         <div class="w-full pr-4">
                             <h3 class="font-semibold uppercase text-white text-2xl mb-10">Contact with us</h3>
                             <div class="text-white mb-2">
-                                <p><em>V-Mark Design is the superior choice for Sydney real estate marketing professionals.</em></p>
+                                <p><em>Work 24/7. PureView is specialized in working with professional visualizations for the real estate.</em></p>
                             </div>
                         </div>
-                        <div id="googleMap" style="width:100%;height:400px;"></div>
+                        <div id="google__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7451.396882486806!2d105.82756!3d20.964622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x119c468bdd8542e9!2zSEgyIExpbmggxJDDoG0!5e0!3m2!1sen!2sus!4v1607489976588!5m2!1sen!2sus" width="600" height="405" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
                     </div>
                     <div class="w-full">
                         <form action="" method="POST">
@@ -86,7 +79,7 @@
         <div class="brands__container">
             <div class="justify-center text-center flex flex-wrap">
                 <div class="max-w-2xl px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl">Our Partners</h3>
+                    <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Our</span> Partners</h3>
                 </div>
             </div>
             <div class="container mx-auto">

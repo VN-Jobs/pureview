@@ -26,18 +26,22 @@ Route::get('/services/1', function () {
     return view('frontend.service.show');
 })->name('frontend.service.show');
 
+Route::get('/post', function () {
+    return view('frontend.post.index');
+})->name('frontend.post.index');
+
+Route::get('/post/1', function () {
+    return view('frontend.post.show');
+})->name('frontend.post.show');
+
+Route::get('/pricing', function () {
+    return view('frontend.pages.pricing');
+})->name('frontend.pages.pricing');
+
+Route::get('/about', function () {
+    return view('frontend.pages.about');
+})->name('frontend.pages.about');
+
 Route::get('/contact', function () {
     return view('frontend.pages.contact');
 })->name('frontend.pages.contact');
-
-Route::get('/home3', function () {
-    return view('frontend.home3.index');
-})->name('frontend.home3.index');
-
-Route::get('/services3', function () {
-    return view('frontend.service3.index');
-})->name('frontend.service3.index');
-
-Route::get('/services3/1', function () {
-    return view('frontend.service3.show');
-})->name('frontend.service3.show');

@@ -68,8 +68,8 @@ button,
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
         background-color: rgba(39, 39, 39, 0.75);
-        -webkit-backdrop-filter: blur(7px);
-        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
     }
 
     .site__logo {
@@ -307,9 +307,7 @@ a {
                     }
                 }
 
-                &:hover,
-                &.is--active,
-                &.is--opening {
+                &:hover {
                     .nav__sub {
                         top: 100%;
                         opacity: 1;
@@ -329,6 +327,31 @@ a {
                 &.is--active {
                     color: #f14833;
                 }
+            }
+        }
+    }
+}
+
+.site__navigation__mobile {
+    .nav__wrapper {
+        height: 100vh;
+    }
+
+    .nav__item {
+        > a {
+            width: 100%;
+            padding: 8px;
+        }
+
+        &.has--sub {
+            > a {
+                .nav__text {
+                    width: 100%;
+                }
+            }
+
+            .nav__sub {
+                padding-left: 20px;
             }
         }
     }
@@ -460,5 +483,20 @@ a {
             border-color: #fff;
             background: #fff;
         }
+    }
+}
+
+.nGY2 {
+    .nGY2ViewerMedia,
+    .nGY2ViewerMediaLoaderHidden {
+        -ms-touch-action: none;
+        touch-action: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }

@@ -10,7 +10,7 @@
     @include('frontend._includes._styles')
 </head>
 <body>
-    <div id="app" class="frontend min-h-screen bg-gray-100">
+    <div id="app" class="frontend">
         <!-- Header -->
         @include('frontend._includes.header')
 

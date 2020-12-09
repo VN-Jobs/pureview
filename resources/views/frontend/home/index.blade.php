@@ -33,11 +33,11 @@
     <!-- Section: Home Call To Action -->
     <section class="home__cta bg-dark-200">
         <div class="container mx-auto">
-            <div class="cta flex justify-between py-8">
-                <div class="flex items-center">
+            <div class="cta lg:flex lg:justify-between py-8">
+                <div class="flex items-center w-full mb-4 lg:mb-0 justify-center lg:justify-normal">
                     <h2 class="text-2xl uppercase text-white">Real estate marketing professionals</h2>
                 </div>
-                <div class="flex items-center">
+                <div class="flex items-center w-full justify-center">
                     <button class="py-2 px-6 uppercase bg-primary text-white border border-solid border-primary hover:bg-transparent hover:text-primary rounded mb-3 sm:mb-0 mx-auto sm:mx-2 block sm:inline-block transition-colors duration-300">Get Pricing</button>
                     <button class="py-2 px-6 uppercase text-white border border-solid border-white hover:bg-white hover:text-primary rounded mx-auto sm:mx-2 block sm:inline-block transition-colors duration-300">Book Now</button>
                 </div>
@@ -50,7 +50,7 @@
         <div class="container-full mx-auto">
             <div class="justify-center text-center flex flex-wrap">
                 <div class="max-w-2xl px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl">Our services</h3>
+                    <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Our</span> services</h3>
                     <p class="text-lg leading-relaxed mt-4 mb-4">Pure-Views Design is the superior choice for sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.</p>
                 </div>
             </div>
@@ -101,8 +101,8 @@
     <section class="home__request">
         <div class="request__form text-white py-20">
             <div class="container mx-auto">
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="w-full pr-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="w-full pr-0 md:pr-4 pb-10 md:pb-0">
                         <h3 class="font-semibold uppercase text-white text-3xl mb-10">SYDNEY REAL ESTATE MARKETING PROFESSIONALS</h3>
                         <div class="text-white">
                             <p><em>V-Mark Design is the superior choice for Sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.<br></em>In one easy phone call we can arrange our experienced team of photographers, copywriters and Floor planners to make a one-off on-site visit, with guaranteed next day online delivery.</p>
@@ -249,55 +249,61 @@
         <div class="container mx-auto">
             <div class="justify-center text-center flex flex-wrap">
                 <div class="max-w-2xl px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl">Latest news</h3>
+                    <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Latest</span> news</h3>
                 </div>
             </div>
             <div class="latest__blog flex flex-wrap py-8">
-                <article class="latest__blog__item w-4/12 md:w-12/12 px-4 first">
-                    <div class="entry__image">
-                        <a href="#">
-                            <img class="post-img" src="/images/blog/1.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
-                        </a>
-                    </div>
-                    <h4 class="entry__heading text-2xl text-primary mt-4">
-                        <a href="#">
-                            <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
-                        </a>
-                    </h4>
-                    <div class="entry__intro mt-4">
-                        <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
-                    </div>
-                </article>
-
-                <article class="latest__blog__item w-4/12 md:w-12/12 px-4 first">
-                    <div class="entry__image">
-                        <a href="#">
-                            <img class="post-img" src="/images/blog/1.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
-                        </a>
-                    </div>
-                    <h4 class="entry__heading text-2xl text-primary mt-4">
-                        <a href="#">
-                            <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
-                        </a>
-                    </h4>
-                    <div class="entry__intro mt-4">
-                        <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
+                <article class="latest__blog__item w-full sm:w-6/12 lg:w-4/12 px-4 first">
+                    <div class="blog__item__wrapper">
+                        <div class="entry__image">
+                            <a href="{{ route('frontend.post.show') }}">
+                                <img class="post-img" src="/images/blog/1.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
+                            </a>
+                        </div>
+                        <h4 class="entry__heading text-2xl text-primary mt-4">
+                            <a href="{{ route('frontend.post.show') }}">
+                                <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
+                            </a>
+                        </h4>
+                        <div class="entry__intro mt-4">
+                            <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
+                        </div>
                     </div>
                 </article>
 
-                <article class="latest__blog__item w-4/12 md:w-12/12 px-4 first">
-                    <div class="entry__image">
-                        <a href="#">
-                            <img class="post-img" src="/images/blog/1.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
-                        </a>
+                <article class="latest__blog__item w-full sm:w-6/12 lg:w-4/12 px-4 mt-8 sm:mt-0">
+                    <div class="blog__item__wrapper">
+                        <div class="entry__image">
+                            <a href="{{ route('frontend.post.show') }}">
+                                <img class="post-img" src="/images/blog/1.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
+                            </a>
+                        </div>
+                        <h4 class="entry__heading text-2xl text-primary mt-4">
+                            <a href="{{ route('frontend.post.show') }}">
+                                <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
+                            </a>
+                        </h4>
+                        <div class="entry__intro mt-4">
+                            <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
+                        </div>
                     </div>
-                    <h4 class="entry__heading text-2xl text-primary mt-4">
-                        <a href="#">
-                            <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
-                        </a>
-                    </h4>
-                    <div class="entry__intro mt-4">
-                        <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
+                </article>
+
+                <article class="latest__blog__item w-full lg:w-4/12 px-4 mt-8 lg:mt-0">
+                    <div class="blog__item__wrapper w-full sm:w-6/12 lg:w-full m-auto">
+                        <div class="entry__image">
+                            <a href="{{ route('frontend.post.show') }}">
+                                <img class="post-img" src="/images/blog/1.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
+                            </a>
+                        </div>
+                        <h4 class="entry__heading text-2xl text-primary mt-4">
+                            <a href="{{ route('frontend.post.show') }}">
+                                <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
+                            </a>
+                        </h4>
+                        <div class="entry__intro mt-4">
+                            <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -308,12 +314,14 @@
     <section class="home__cta2">
         <div class="cta__container">
             <div class="container mx-auto">
-                <div class="cta flex justify-between py-12">
-                    <div class="max-w-3xl lg:pr-2 text-white">
-                        <h2 class="text-2xl uppercase">Real estate marketing professionals</h2>
-                        <p>Pure Views are the exceptional option for property specialists in need of prompt, professional and cost effective promotional solutions.</p>
+                <div class="cta lg:flex lg:justify-between py-8">
+                    <div class="flex items-center w-full mb-4 lg:mb-0 justify-center lg:justify-normal">
+                        <div class="text-center lg:text-left">
+                            <h2 class="text-2xl uppercase text-white">Real estate marketing professionals</h2>
+                            <p>Pure Views are the exceptional option for property specialists in need of prompt, professional and cost effective promotional solutions.</p>
+                        </div>
                     </div>
-                    <div class="flex items-center">
+                    <div class="flex items-center w-full justify-center">
                         <button class="py-2 px-6 uppercase bg-primary text-white border border-solid border-primary hover:bg-transparent hover:text-primary rounded mb-3 sm:mb-0 mx-auto sm:mx-2 block sm:inline-block transition-colors duration-300">Get Pricing</button>
                         <button class="py-2 px-6 uppercase text-white border border-solid border-white hover:bg-white hover:text-primary rounded mx-auto sm:mx-2 block sm:inline-block transition-colors duration-300">Book Now</button>
                     </div>
@@ -327,7 +335,7 @@
         <div class="brands__container">
             <div class="justify-center text-center flex flex-wrap">
                 <div class="max-w-2xl px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl">Our Partners</h3>
+                    <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Our</span> Partners</h3>
                 </div>
             </div>
             <div class="container mx-auto">

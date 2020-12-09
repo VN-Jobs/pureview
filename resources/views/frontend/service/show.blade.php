@@ -3,7 +3,7 @@
 @section('title', __('Service detail page'))
 
 @push('sufscripts')
-<script src="{{ asset('vendor/nanogallery2/jquery.nanogallery2.min.js?v=' . env('APP_VERSION')) }}"></script>
+<script src="{{ asset('vendor/nanogallery2/jquery.nanogallery2.js?v=' . env('APP_VERSION')) }}"></script>
 <script src="{{ asset('js/frontend/pages/service-detail.js?v=' . env('APP_VERSION')) }}"></script>
 @endpush
 

@@ -1,6 +1,6 @@
 const mix = require('laravel-mix');
 
-mix.copyDirectory('node_modules/nanogallery2/dist/css/font', 'public/css/frontend/font');
+mix.copyDirectory('node_modules/nanogallery2-custom/dist/css/font', 'public/css/frontend/font');
 
 mix.sass('resources/sass/frontend/app.scss', 'public/css/frontend')
     .options({
@@ -18,7 +18,6 @@ mix.js('resources/js/frontend/app.js', 'public/js/frontend')
         'lodash',
         'jquery',
         'swiper',
-        'nanogallery2',
         'isotope-layout',
         'imagesloaded',
         'video.js',
@@ -29,18 +28,8 @@ mix.js('resources/js/frontend/app.js', 'public/js/frontend')
 mix.scripts('resources/js/frontend/lang/en.js', 'public/js/frontend/lang/en.js');
 
 // Vendor JS
-mix.scripts('node_modules/nanogallery2/dist/jquery.nanogallery2.min.js', 'public/vendor/nanogallery2/jquery.nanogallery2.min.js');
+mix.scripts('node_modules/nanogallery2-custom/dist/jquery.nanogallery2.js', 'public/vendor/nanogallery2/jquery.nanogallery2.js');
 
 // Vanilla JS: pages
 mix.scripts('resources/js/frontend/pages/home.js', 'public/js/frontend/pages/home.js');
 mix.scripts('resources/js/frontend/pages/service-detail.js', 'public/js/frontend/pages/service-detail.js');
-
-// Fixbug not define for nanogallery2.
-// mix.webpackConfig({
-//     module: {
-//         rules: [{
-//             test: /nanogallery2/,
-//             use: 'imports-loader?module.exports=>undefined&exports=>undefined'
-//         }]
-//     }
-// });

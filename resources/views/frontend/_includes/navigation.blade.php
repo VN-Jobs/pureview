@@ -6,7 +6,7 @@
                 <div class="flex w-full">
                     <!-- Logo -->
                     <div class="flex-shrink-0 flex items-center">
-                        <a href="{{ route('frontend.home.index') }}" class="site__logo">
+                        <a href="{{ route('frontend.home.index') }}" class="site__logo py-1">
                             {{-- <img src="/images/logo.png" alt=""> --}}
                             @include('components.logo')
                         </a>
@@ -90,7 +90,7 @@
 
                 <!-- Hamburger -->
                 <div class="-mr-2 flex items-center md:hidden">
-                    <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-sm text-dark-200 hover:text-dark-200 bg-gray-100 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                    <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-sm text-white hover:text-white bg-transparent hover:bg-transparent focus:outline-none focus:bg-transparent focus:text-white transition duration-150 ease-in-out">
                         <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                             <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                             <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -101,7 +101,7 @@
         </div>
 
         <!-- Responsive Navigation Menu -->
-        <div :class="{'block': open, 'hidden': ! open}" class="site__navigation__mobile hidden md:hidden">
+        <div :class="{'block': open, 'hidden': ! open}" class="site__navigation__mobile hidden md:hidden p-4">
             <!-- Mobile Navigation Links -->
             <ul class="nav__wrapper sm:px-10 md:flex">
                 <li class="nav__item{{ request()->routeIs('frontend.home.index') ? ' is--active' : '' }}">
@@ -110,11 +110,11 @@
                     </a>
                 </li>
 
-                <li class="nav__item has--sub{{ request()->routeIs('frontend.service.index') ? ' is--active' : '' }}">
-                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.index') ? ' is--active' : '' }}" href="{{ route('frontend.service.index') }}">
+                <li class="nav__item has--sub">
+                    <span class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out">
                         <span class="nav__text">Services</span>
                         @include('components.svg-angle-down')
-                    </a>
+                    </span>
 
                     <ul class="nav__sub">
                         <li class="nav__item{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}">

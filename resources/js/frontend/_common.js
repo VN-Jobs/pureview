@@ -162,11 +162,25 @@
     /*------------- Brand Slides ------------------*/
     var brandSlides = new swiper.Swiper('.swiper__brands', {
         loop: true,
-        slidesPerView: 5,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 10,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            }
         }
     });
 

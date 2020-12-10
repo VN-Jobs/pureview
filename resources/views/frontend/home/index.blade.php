@@ -3,8 +3,8 @@
 @section('title', __('Home page'))
 
 @section('content')
-    <!-- Section: Home Feature -->
-    <section class="home__feature">
+    <!-- Section: Feature -->
+    <section class="section__feature">
         <div class="container-full mx-auto">
             <div class="home-slider">
                 <div class="swiper__container swiper-container">
@@ -30,27 +30,27 @@
         </div>
     </section>
 
-    <!-- Section: Home Call To Action -->
-    <section class="home__cta bg-dark-200">
+    <!-- Section: Call To Action -->
+    <section class="section__cta bg-dark-200">
         <div class="container mx-auto">
             <div class="cta lg:flex lg:justify-between py-8">
-                <div class="flex items-center w-full mb-4 lg:mb-0 justify-center lg:justify-normal">
+                <div class="flex items-center w-full mb-4 lg:mb-0 justify-center lg:justify-normal text-center lg:text-left">
                     <h2 class="text-2xl uppercase text-white">Real estate marketing professionals</h2>
                 </div>
                 <div class="flex items-center w-full justify-center">
-                    <button class="py-2 px-6 uppercase bg-primary text-white border border-solid border-primary hover:bg-transparent hover:text-primary rounded mb-3 sm:mb-0 mx-auto sm:mx-2 block sm:inline-block transition-colors duration-300">Get Pricing</button>
+                    <button class="py-2 px-6 uppercase bg-primary text-white border border-solid border-primary hover:bg-transparent hover:text-primary rounded mx-auto sm:mx-2 block sm:inline-block transition-colors duration-300">Get Pricing</button>
                     <button class="py-2 px-6 uppercase text-white border border-solid border-white hover:bg-white hover:text-primary rounded mx-auto sm:mx-2 block sm:inline-block transition-colors duration-300">Book Now</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section: Home Services -->
-    <section class="home__services pt-24">
+    <!-- Section: Services -->
+    <section class="section__services pt-24">
         <div class="container-full mx-auto">
             <div class="justify-center text-center flex flex-wrap">
                 <div class="max-w-2xl px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Our</span> services</h3>
+                    <h3 class="font-semibold uppercase text-3xl md:text-4xl"><span style="color: #f14833;">Our</span> services</h3>
                     <p class="text-lg leading-relaxed mt-4 mb-4">Pure-Views Design is the superior choice for sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.</p>
                 </div>
             </div>
@@ -98,7 +98,7 @@
     </section>
 
     <!-- Section: Home Request -->
-    <section class="home__request">
+    <section class="section__request">
         <div class="request__form text-white py-20">
             <div class="container mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -156,8 +156,8 @@
         </div>
     </section>
 
-    <!-- Section: Home Services Gallery -->
-    <section class="home__services__gallery py-6">
+    <!-- Section: Services Gallery -->
+    <section class="section__services__gallery py-6">
         <div class="container-full px-4 sm:px-6 mx-auto">
             <div class="services__gallery">
                 <div href="#" class="grid__sizer"></div>
@@ -244,12 +244,12 @@
         </div>
     </section>
 
-    <!-- Section: Home Latest Blog -->
-    <section class="home__blog pt-24">
+    <!-- Section: Latest Blog -->
+    <section class="section__latest__blog pt-24">
         <div class="container mx-auto">
             <div class="justify-center text-center flex flex-wrap">
                 <div class="max-w-2xl px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Latest</span> news</h3>
+                    <h3 class="font-semibold uppercase text-3xl md:text-4xl"><span style="color: #f14833;">Latest</span> news</h3>
                 </div>
             </div>
             <div class="block__list flex flex-wrap text-center lg:text-left py-8">
@@ -310,8 +310,8 @@
         </div>
     </section>
 
-    <!-- Section: Home Call To Action 2 -->
-    <section class="home__cta2">
+    <!-- Section: Call To Action 2 -->
+    <section class="section__cta2">
         <div class="cta__container">
             <div class="container mx-auto">
                 <div class="cta lg:flex lg:justify-between py-8">
@@ -330,50 +330,6 @@
         </div>
     </section>
 
-    <!-- Section: Home Our Partners -->
-    <section class="home__brands pt-24">
-        <div class="brands__container">
-            <div class="justify-center text-center flex flex-wrap">
-                <div class="max-w-2xl px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Our</span> Partners</h3>
-                </div>
-            </div>
-            <div class="container mx-auto">
-                <div class="brands flex justify-between py-12">
-                    <div class="swiper__brands swiper-container text-center">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="/images/brands/1.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/2.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/3.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/4.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/5.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/6.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/7.png" alt="Slide 1" class="inline-block">
-                            </div>
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next">
-                            <i class="las la-angle-right la-1x"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="las la-angle-left la-1x"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Section: Our Partners -->
+    @include('frontend._includes.brands')
 @endsection

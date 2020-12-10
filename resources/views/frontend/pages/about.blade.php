@@ -7,7 +7,7 @@
     <section class="heading__slides">
         <div class="heading__container flex items-center mx-auto">
             <div class="container mx-auto text-center">
-                <h2 class="heading__title font-semibold uppercase text-white text-4xl mb-4">About us</h2>
+                <h2 class="heading__title font-semibold uppercase text-white text-3xl md:text-4xl mb-4">About us</h2>
                 <p class="heading__desc"><em>PureView is specialized in working with professional visualizations for the real estate</em></p>
             </div>
         </div>
@@ -15,11 +15,11 @@
 
     <!-- Section: About Intro -->
     <section class="about__intro">
-        <div class="py-20">
+        <div class="py-12 lg:py-20">
             <div class="container mx-auto">
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-center lg:text-left">
                     <div class="w-full">
-                        <img src="/images/about.jpg" alt="PureView">
+                        <img src="/images/about.jpg" alt="PureView" class="mx-auto lg:mx-0 mb-10 lg:mb-0">
                     </div>
 
                     <div class="w-full pr-4">
@@ -42,72 +42,25 @@ Based on low cost but high quality production, fast turnaround time, well-educat
 
     <!-- Section: About Teams -->
     <section class="about__teams">
-        <div class="py-20">
+        <div class="py-12 lg:py-20">
             <div class="container mx-auto">
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="justify-center items-center text-center flex flex-wrap w-full bg-gray-200">
-                        <div class="max-w-2xl p-4">
-                            <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Our</span> Teams</h3>
+                <div class="block__team block sm:flex">
+                    <div class="team__intro justify-center items-center text-center flex flex-wrap w-full sm:w-4/12 lg:w-3/12 bg-gray-200">
+                        <div class="p-4">
+                            <h3 class="font-semibold uppercase text-3xl md:text-4xl"><span style="color: #f14833;">Our</span> Teams</h3>
                             <div class="h-1 mx-auto bg-primary w-24 opacity-75 mt-4 rounded"></div>
                         </div>
                     </div>
 
-                    <div class="w-full">
-                        <img src="/images/teams/1.jpeg" alt="1" style="display: inline-block; height: 200px;">
-                        <img src="/images/teams/2.jpeg" alt="2" style="display: inline-block; height: 200px; margin-left: 10px;">
-                    </div>
-
-                    <div class="w-full">
+                    <div class="team__content flex w-full sm:w-8/12 lg:w-9/12 pl-0 sm:pl-4 pt-4 sm:pt-0 justify-center sm:justify-start">
+                        <div class="team__item shadow-sm" style="background-image: url(/images/teams/1.jpeg);"></div>
+                        <div class="team__item ml-4 shadow-sm" style="background-image: url(/images/teams/2.jpeg);"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section: Home Our Partners -->
-    <section class="home__brands pt-24">
-        <div class="brands__container">
-            <div class="justify-center text-center flex flex-wrap">
-                <div class="max-w-2xl px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Our</span> Partners</h3>
-                </div>
-            </div>
-            <div class="container mx-auto">
-                <div class="brands flex justify-between py-12">
-                    <div class="swiper__brands swiper-container text-center">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="/images/brands/1.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/2.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/3.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/4.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/5.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/6.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/7.png" alt="Slide 1" class="inline-block">
-                            </div>
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next">
-                            <i class="las la-angle-right la-1x"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="las la-angle-left la-1x"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Section: Our Partners -->
+    @include('frontend._includes.brands')
 @endsection

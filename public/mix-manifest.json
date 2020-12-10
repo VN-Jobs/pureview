@@ -7,7 +7,7 @@
     "/js/frontend/vendor.js": "/js/frontend/vendor.js",
     "/js/vendor.js": "/js/vendor.js",
     "/js/frontend/lang/en.js": "/js/frontend/lang/en.js",
-    "/vendor/nanogallery2/jquery.nanogallery2.min.js": "/vendor/nanogallery2/jquery.nanogallery2.min.js",
+    "/vendor/nanogallery2/jquery.nanogallery2.js": "/vendor/nanogallery2/jquery.nanogallery2.js",
     "/js/frontend/pages/home.js": "/js/frontend/pages/home.js",
     "/js/frontend/pages/service-detail.js": "/js/frontend/pages/service-detail.js"
 }

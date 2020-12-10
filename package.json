@@ -36,7 +36,7 @@
         "line-awesome": "^1.3.0",
         "lodash": "^4.17.19",
         "moment": "^2.29.1",
-        "nanogallery2": "^3.0.4",
+        "nanogallery2-custom": "^1.0.0",
         "postcss": "^7.0.35",
         "postcss-css-variables": "^0.17.0",
         "postcss-import": "^12.0.1",

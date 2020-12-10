@@ -18,10 +18,6 @@ Route::get('/', function () {
     return view('frontend.home.index');
 })->name('frontend.home.index');
 
-Route::get('/services', function () {
-    return view('frontend.service.index');
-})->name('frontend.service.index');
-
 Route::get('/services/1', function () {
     return view('frontend.service.show');
 })->name('frontend.service.show');

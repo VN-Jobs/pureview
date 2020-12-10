@@ -7,83 +7,32 @@
     <section class="heading__slides">
         <div class="heading__container flex items-center mx-auto">
             <div class="container mx-auto text-center">
-                <h2 class="heading__title font-semibold uppercase text-white text-2xl mb-4">About us</h2>
-                <p class="heading__desc"><em>PureView is specialized in working with professional visualizations for the real estate</em></p>
+                <h2 class="heading__title font-semibold uppercase text-white text-2xl mb-4">At Mario's Always Fresh Cupcake Ice Cream?</h2>
+                {{-- <p class="heading__desc"><em>PureView is specialized in working with professional visualizations for the real estate</em></p> --}}
             </div>
         </div>
     </section>
 
-    <!-- Section: Home Request -->
-    <section class="about__intro">
-        <div class="py-20">
-            <div class="container mx-auto">
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="w-full">
-                        <img src="/images/about.jpg" alt="PureView">
-                    </div>
+    <!-- Section: Request -->
+    <div class="py-20">
+        <div class="container mx-auto">
+            <article class="post">
+                <div class="w-full mb-10">
+                    <img src="/images/blog/4.jpg" alt="PureView">
+                </div>
 
-                    <div class="w-full pr-4">
-                        <div class="w-full pr-4">
-                            <h3 class="font-semibold uppercase text-2xl mb-10">WHO ARE WE?</h3>
-                            <div class="mb-2">
-                                <p>Realtyedits  is a real estate photo editing team based in Vietnam. Founded in 2017.
-Realtyedits  is one of the world's leading real estate editing teams specializing in editing, processing images and 3D images.
-Customers of Realtyedits are real estate agents and real estate marketing companies in Europe, the United States and Australia. We is always ready to provide fast service, innovative solutions and best quality.
-
-Based on low cost but high quality production, fast turnaround time, well-educated and hard-working staff, as well as advanced technology and updates, we are ready to provide you with Good and cheap quality graphic packages to accelerate your brokerage service. To receive a free prototype, details of our quote or any other information, please contact us.</p>
-                            </div>
-                        </div>
-
+                <div class="w-full">
+                    <h3 class="post__title font-semibold uppercase text-2xl mb-4">At Mario's Always Fresh Cupcake Ice Cream?</h3>
+                    <div class="post__content">
+                        <p class="mb-2">Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
+                        <p class="mb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                        <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Section: Home Our Partners -->
-    <section class="home__brands pt-24">
-        <div class="brands__container">
-            <div class="justify-center text-center flex flex-wrap">
-                <div class="max-w-2xl px-12 md:px-4">
-                    <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Our</span> Partners</h3>
-                </div>
-            </div>
-            <div class="container mx-auto">
-                <div class="brands flex justify-between py-12">
-                    <div class="swiper__brands swiper-container text-center">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="/images/brands/1.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/2.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/3.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/4.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/5.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/6.png" alt="Slide 1" class="inline-block">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/brands/7.png" alt="Slide 1" class="inline-block">
-                            </div>
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next">
-                            <i class="las la-angle-right la-1x"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="las la-angle-left la-1x"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Section: Our Partners -->
+    @include('frontend._includes.brands')
 @endsection

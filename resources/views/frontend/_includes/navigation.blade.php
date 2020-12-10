@@ -15,38 +15,38 @@
                     <!-- Navigation Links -->
                     <ul class="nav__wrapper hidden space-x-1 sm:ml-10 md:flex">
                         <li class="nav__item{{ request()->routeIs('frontend.home.index') ? ' is--active' : '' }}">
-                            <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.home.index') ? ' is--active' : '' }}" href="{{ route('frontend.home.index') }}">
+                            <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.home.index') ? ' is--active' : '' }}" href="{{ route('frontend.home.index') }}">
                                 <span class="nav__text">Home Page</span>
                             </a>
                         </li>
 
-                        <li class="nav__item has--sub{{ request()->routeIs('frontend.service.index') ? ' is--active' : '' }}">
-                            <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.index') ? ' is--active' : '' }}" href="{{ route('frontend.service.index') }}">
+                        <li class="nav__item has--sub">
+                            <span class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out">
                                 <span class="nav__text">Services</span>
                                 @include('components.svg-angle-down')
-                            </a>
+                            </span>
 
                             <ul class="nav__sub">
                                 <li class="nav__item{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}">
-                                    <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
+                                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
                                         <span class="nav__text">Real Estate Photography</span>
                                     </a>
                                 </li>
 
                                 <li class="nav__item{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}">
-                                    <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
+                                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
                                         <span class="nav__text">Commercial Photography</span>
                                     </a>
                                 </li>
 
                                 <li class="nav__item{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}">
-                                    <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
+                                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
                                         <span class="nav__text">Drone Photography</span>
                                     </a>
                                 </li>
 
                                 <li class="nav__item{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}">
-                                    <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
+                                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
                                         <span class="nav__text">Twilight Photography</span>
                                     </a>
                                 </li>
@@ -54,14 +54,14 @@
                         </li>
 
                         <li class="nav__item has--sub{{ request()->routeIs('frontend.post.index') ? ' is--active' : '' }}">
-                            <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.post.index') ? ' is--active' : '' }}" href="{{ route('frontend.post.index') }}">
+                            <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.post.index') ? ' is--active' : '' }}" href="{{ route('frontend.post.index') }}">
                                 <span class="nav__text">Blog</span>
                                 @include('components.svg-angle-down')
                             </a>
 
                             <ul class="nav__sub">
                                 <li class="nav__item{{ request()->routeIs('frontend.post.show') ? ' is--active' : '' }}">
-                                    <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.post.show') ? ' is--active' : '' }}" href="{{ route('frontend.post.show') }}">
+                                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.post.show') ? ' is--active' : '' }}" href="{{ route('frontend.post.show') }}">
                                         <span class="nav__text">Blog Detail</span>
                                     </a>
                                 </li>
@@ -69,19 +69,19 @@
                         </li>
 
                         <li class="nav__item{{ request()->routeIs('frontend.pages.pricing') ? ' is--active' : '' }}">
-                            <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.pricing') ? ' is--active' : '' }}" href="{{ route('frontend.pages.pricing') }}">
+                            <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.pricing') ? ' is--active' : '' }}" href="{{ route('frontend.pages.pricing') }}">
                                 <span class="nav__text">Pricing</span>
                             </a>
                         </li>
 
                         <li class="nav__item{{ request()->routeIs('frontend.pages.about') ? ' is--active' : '' }}">
-                            <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.about') ? ' is--active' : '' }}" href="{{ route('frontend.pages.about') }}">
+                            <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.about') ? ' is--active' : '' }}" href="{{ route('frontend.pages.about') }}">
                                 <span class="nav__text">About</span>
                             </a>
                         </li>
 
                         <li class="nav__item{{ request()->routeIs('frontend.pages.contact') ? ' is--active' : '' }}">
-                            <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.contact') ? ' is--active' : '' }}" href="{{ route('frontend.pages.contact') }}">
+                            <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.contact') ? ' is--active' : '' }}" href="{{ route('frontend.pages.contact') }}">
                                 <span class="nav__text">Contact</span>
                             </a>
                         </li>
@@ -105,38 +105,38 @@
             <!-- Mobile Navigation Links -->
             <ul class="nav__wrapper sm:px-10 md:flex">
                 <li class="nav__item{{ request()->routeIs('frontend.home.index') ? ' is--active' : '' }}">
-                    <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.home.index') ? ' is--active' : '' }}" href="{{ route('frontend.home.index') }}">
+                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.home.index') ? ' is--active' : '' }}" href="{{ route('frontend.home.index') }}">
                         <span class="nav__text">Home Page</span>
                     </a>
                 </li>
 
                 <li class="nav__item has--sub{{ request()->routeIs('frontend.service.index') ? ' is--active' : '' }}">
-                    <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.index') ? ' is--active' : '' }}" href="{{ route('frontend.service.index') }}">
+                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.index') ? ' is--active' : '' }}" href="{{ route('frontend.service.index') }}">
                         <span class="nav__text">Services</span>
                         @include('components.svg-angle-down')
                     </a>
 
                     <ul class="nav__sub">
                         <li class="nav__item{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}">
-                            <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
+                            <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
                                 <span class="nav__text">Real Estate Photography</span>
                             </a>
                         </li>
 
                         <li class="nav__item{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}">
-                            <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
+                            <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
                                 <span class="nav__text">Commercial Photography</span>
                             </a>
                         </li>
 
                         <li class="nav__item{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}">
-                            <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
+                            <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
                                 <span class="nav__text">Drone Photography</span>
                             </a>
                         </li>
 
                         <li class="nav__item{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}">
-                            <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
+                            <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.service.show') ? ' is--active' : '' }}" href="{{ route('frontend.service.show') }}">
                                 <span class="nav__text">Twilight Photography</span>
                             </a>
                         </li>
@@ -144,14 +144,14 @@
                 </li>
 
                 <li class="nav__item has--sub{{ request()->routeIs('frontend.post.index') ? ' is--active' : '' }}">
-                    <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.post.index') ? ' is--active' : '' }}" href="{{ route('frontend.post.index') }}">
+                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.post.index') ? ' is--active' : '' }}" href="{{ route('frontend.post.index') }}">
                         <span class="nav__text">Blog</span>
                         @include('components.svg-angle-down')
                     </a>
 
                     <ul class="nav__sub">
                         <li class="nav__item{{ request()->routeIs('frontend.post.show') ? ' is--active' : '' }}">
-                            <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.post.show') ? ' is--active' : '' }}" href="{{ route('frontend.post.show') }}">
+                            <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.post.show') ? ' is--active' : '' }}" href="{{ route('frontend.post.show') }}">
                                 <span class="nav__text">Blog Detail</span>
                             </a>
                         </li>
@@ -159,19 +159,19 @@
                 </li>
 
                 <li class="nav__item{{ request()->routeIs('frontend.pages.pricing') ? ' is--active' : '' }}">
-                    <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.pricing') ? ' is--active' : '' }}" href="{{ route('frontend.pages.pricing') }}">
+                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.pricing') ? ' is--active' : '' }}" href="{{ route('frontend.pages.pricing') }}">
                         <span class="nav__text">Pricing</span>
                     </a>
                 </li>
 
                 <li class="nav__item{{ request()->routeIs('frontend.pages.about') ? ' is--active' : '' }}">
-                    <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.about') ? ' is--active' : '' }}" href="{{ route('frontend.pages.about') }}">
+                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.about') ? ' is--active' : '' }}" href="{{ route('frontend.pages.about') }}">
                         <span class="nav__text">About</span>
                     </a>
                 </li>
 
                 <li class="nav__item{{ request()->routeIs('frontend.pages.contact') ? ' is--active' : '' }}">
-                    <a class="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.contact') ? ' is--active' : '' }}" href="{{ route('frontend.pages.contact') }}">
+                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ request()->routeIs('frontend.pages.contact') ? ' is--active' : '' }}" href="{{ route('frontend.pages.contact') }}">
                         <span class="nav__text">Contact</span>
                     </a>
                 </li>

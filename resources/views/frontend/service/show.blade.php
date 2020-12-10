@@ -9,42 +9,47 @@
 
 @section('content')
     <!-- Section: Heading Slides -->
-    <section class="heading__slides">
+    {{-- <section class="heading__slides">
         <div class="heading__container mx-auto"></div>
+    </section> --}}
+
+    <section class="heading__slides">
+        <div class="heading__container flex items-center mx-auto">
+            <div class="container mx-auto text-center">
+                <h2 class="heading__title font-semibold uppercase text-white text-4xl mb-4">REAL ESTATE PHOTOGRAPHY</h2>
+                <p class="heading__desc mx-auto max-w-3xl"><em>Using state-of-the-art equipment, our accomplished real estate photographers create extraordinary property images sure to capture the attention and imagination of potential buyers tenants.</em></p>
+            </div>
+        </div>
     </section>
 
-    <!-- Section: Home Services -->
-    <section class="home__services pt-24">
-        <div class="container-full mx-auto px-20">
-            <div class="justify-center text-center flex flex-wrap grid grid-cols-2 gap-4">
-                <div class="flex flex-col px-12 md:px-4">
-                    <div>
-                        <h2 class="font-semibold uppercase text-3xl mb-10">REAL ESTATE PHOTOGRAPHY</h2>
-                        <p><em>Using state-of-the-art equipment, our accomplished real estate photographers create extraordinary property&nbsp;images sure to capture the attention and imagination of potential buyers tenants.</em></p>
-                        <div class="mt-2">
-                            <p style="text-align: center;">We tame tricky exposures that can complicate images of architecture or landscape, HDR photography utilises wide dynamic ranges.</p>
-                            <p style="text-align: center;">Every room is meticulously enhanced to look its photogenic best. We style your room, shift furniture and use props&nbsp;to capture the perfect ambience and ensure the saleable features of your property are highlighted in every shot. Multiple exposures are taken, blended and retouched to create a flawless and vibrant image. Photos are conveniently delivered in print and web ready formats for easy printing and uploading with 24 hours.</p>
-                            <p style="text-align: center;">Our highly skilled retouching team work closely with all of our agents to make sure we showcase the property in the best light. Whether you are trying to sell or lease your Property, V-Mark Designs team of Professional Real Estate Photographers are sure to bring more buyers and potential tenants to your property to help achieve a better price. We look forward to bringing your property to life.</p>
-                        </div>
+    <!-- Section: Single Service -->
+    <section class="single__service pt-24">
+        <div class="container-full mx-auto px-0 lg:px-20">
+            <div class="flex flex-col px-4 mb-10">
+                <div class="ba__container">
+                    <img src="https://w8.foxdsgn.com/prague/wp-content/uploads/2017/01/before.jpg" class="" alt="">
+
+                    <div class="resize">
+                        <img src="https://w8.foxdsgn.com/prague/wp-content/uploads/2017/01/after.jpg" class="" alt="">
                     </div>
-                </div>
 
-                <div class="flex flex-col px-12 md:px-4">
-                    <div class="ba__container">
-                        <img src="https://w8.foxdsgn.com/prague/wp-content/uploads/2017/01/before.jpg" class="" alt="">
-
-                        <div class="resize">
-                            <img src="https://w8.foxdsgn.com/prague/wp-content/uploads/2017/01/after.jpg" class="" alt="">
-                        </div>
-
-                        <span class="handle">
-                            <span class="handle__wrapper">
-                                <i class="las la-arrows-alt-h"></i>
-                            </span>
+                    <span class="handle">
+                        <span class="handle__wrapper">
+                            <i class="las la-arrows-alt-h"></i>
                         </span>
-                        <a href="#" class="button prev"><i class="las la-long-arrow-alt-left mr-2"></i>BEFORE</a>
-                        <a href="#" class="button reset"><i class="las la-grip-lines-vertical mr-2"></i>RESET</a>
-                        <a href="#" class="button next"><i class="las la-long-arrow-alt-right mr-2"></i>AFTER</a>
+                    </span>
+                    <a href="#" class="button prev"><i class="las la-long-arrow-alt-left mr-2"></i>BEFORE</a>
+                    <a href="#" class="button reset"><i class="las la-grip-lines-vertical mr-2"></i>RESET</a>
+                    <a href="#" class="button next"><i class="las la-long-arrow-alt-right mr-2"></i>AFTER</a>
+                </div>
+            </div>
+
+            <div class="justify-center text-center flex flex-wrap grid grid-cols-1 gap-4">
+                <div class="flex flex-col px-12 md:px-4">
+                    <div class="service__content">
+                        <p>We tame tricky exposures that can complicate images of architecture or landscape, HDR photography utilises wide dynamic ranges.</p>
+                        <p>Every room is meticulously enhanced to look its photogenic best. We style your room, shift furniture and use props&nbsp;to capture the perfect ambience and ensure the saleable features of your property are highlighted in every shot. Multiple exposures are taken, blended and retouched to create a flawless and vibrant image. Photos are conveniently delivered in print and web ready formats for easy printing and uploading with 24 hours.</p>
+                        <p>Our highly skilled retouching team work closely with all of our agents to make sure we showcase the property in the best light. Whether you are trying to sell or lease your Property, V-Mark Designs team of Professional Real Estate Photographers are sure to bring more buyers and potential tenants to your property to help achieve a better price. We look forward to bringing your property to life.</p>
                     </div>
                 </div>
             </div>
@@ -53,7 +58,7 @@
         <div class="container-full mx-auto pt-20">
             <div class="services__grid">
                 <div id="showcase__gallery" data-nanogallery2='{
-                    "itemsBaseURL": "http://demo.test/images/services/",
+                    "itemsBaseURL": "/images/services/",
                     "thumbnailHeight": "auto",
                     "thumbnailWidth": "400",
                     "thumbnailLabel": {
@@ -127,60 +132,66 @@
         </div>
     </section>
 
-    <!-- Section: Home Latest Blog -->
-    <section class="home__blog pt-24">
+    <!-- Section: Other Services -->
+    <section class="other__services pt-24">
         <div class="container mx-auto">
             <div class="justify-center text-center flex flex-wrap">
                 <div class="max-w-2xl px-12 md:px-4">
                     <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Other</span> services</h3>
                 </div>
             </div>
-            <div class="latest__blog flex flex-wrap py-8">
-                <article class="latest__blog__item w-4/12 md:w-12/12 px-4 first">
-                    <div class="entry__image">
-                        <a href="#">
-                            <img class="post-img" src="/images/services/11.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
-                        </a>
-                    </div>
-                    <h4 class="entry__heading text-2xl text-primary mt-4">
-                        <a href="#">
-                            <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
-                        </a>
-                    </h4>
-                    <div class="entry__intro mt-4">
-                        <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
-                    </div>
-                </article>
-
-                <article class="latest__blog__item w-4/12 md:w-12/12 px-4 first">
-                    <div class="entry__image">
-                        <a href="#">
-                            <img class="post-img" src="/images/services/22.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
-                        </a>
-                    </div>
-                    <h4 class="entry__heading text-2xl text-primary mt-4">
-                        <a href="#">
-                            <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
-                        </a>
-                    </h4>
-                    <div class="entry__intro mt-4">
-                        <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
+            <div class="block__list flex flex-wrap text-center lg:text-left py-8">
+                <article class="list__item w-full lg:w-4/12 sm:px-4 first">
+                    <div class="list__item__wrapper w-full sm:w-6/12 lg:w-full m-auto">
+                        <div class="entry__image">
+                            <a href="{{ route('frontend.service.show') }}">
+                                <img class="post-img" src="/images/services/11.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
+                            </a>
+                        </div>
+                        <h4 class="entry__heading text-2xl text-primary mt-4">
+                            <a href="{{ route('frontend.service.show') }}">
+                                <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
+                            </a>
+                        </h4>
+                        <div class="entry__intro mt-4">
+                            <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
+                        </div>
                     </div>
                 </article>
 
-                <article class="latest__blog__item w-4/12 md:w-12/12 px-4 first">
-                    <div class="entry__image">
-                        <a href="#">
-                            <img class="post-img" src="/images/services/11.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
-                        </a>
+                <article class="list__item w-full sm:w-6/12 lg:w-4/12 sm:px-4 mt-8 lg:mt-0">
+                    <div class="list__item__wrapper">
+                        <div class="entry__image">
+                            <a href="{{ route('frontend.service.show') }}">
+                                <img class="post-img" src="/images/services/22.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
+                            </a>
+                        </div>
+                        <h4 class="entry__heading text-2xl text-primary mt-4">
+                            <a href="{{ route('frontend.service.show') }}">
+                                <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
+                            </a>
+                        </h4>
+                        <div class="entry__intro mt-4">
+                            <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
+                        </div>
                     </div>
-                    <h4 class="entry__heading text-2xl text-primary mt-4">
-                        <a href="#">
-                            <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
-                        </a>
-                    </h4>
-                    <div class="entry__intro mt-4">
-                        <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
+                </article>
+
+                <article class="list__item w-full sm:w-6/12 lg:w-4/12 sm:px-4 mt-8 lg:mt-0">
+                    <div class="list__item__wrapper">
+                        <div class="entry__image">
+                            <a href="{{ route('frontend.service.show') }}">
+                                <img class="post-img" src="/images/services/11.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
+                            </a>
+                        </div>
+                        <h4 class="entry__heading text-2xl text-primary mt-4">
+                            <a href="{{ route('frontend.service.show') }}">
+                                <span>At Mario's Always Fresh Cupcake Ice Cream?</span>
+                            </a>
+                        </h4>
+                        <div class="entry__intro mt-4">
+                            <p>Veggies food taste better when cooked, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. <i style="vertical-align:bottom;margin:0 1px 1px;" class="las la-ellipsis-h"></i></p>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -238,11 +249,11 @@
     <section class="home__request">
         <div class="request__form text-white py-20">
             <div class="container mx-auto">
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="w-full pr-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="w-full pr-0 md:pr-4 pb-10 md:pb-0">
                         <h3 class="font-semibold uppercase text-white text-3xl mb-10">SYDNEY REAL ESTATE MARKETING PROFESSIONALS</h3>
                         <div class="text-white">
-                            <p><em>V-Mark Design is the superior choice for Sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.<br></em>In one easy phone call we can arrange our experienced team of photographers, copywriters and Floor planners to make a one-off on-site visit, with guaranteed next day online delivery.</p>
+                            <p><em>PureView is the superior choice for Sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.<br></em>In one easy phone call we can arrange our experienced team of photographers, copywriters and Floor planners to make a one-off on-site visit, with guaranteed next day online delivery.</p>
                             <p>In one easy phone call we can arrange our experienced team of photographers, copywriters and Floor planners to make a one-off on-site visit, with guaranteed next day online delivery.</p>
                             <p>We offer a range of additional services to complement your marketing campaign including videos, virtual tours, aerial photography, photo retouching, graphic design and printed brochures and signboards.</p>
                             <button class="py-2 px-6 mt-8 uppercase text-white border border-solid border-white hover:bg-white hover:text-primary rounded block sm:inline-block transition-colors duration-300">Learn More</button>

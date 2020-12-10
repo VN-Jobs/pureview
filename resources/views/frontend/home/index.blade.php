@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="services__grid py-8">
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-0">
                     <a href="{{ route('frontend.service.show') }}" class="grid__item relative flex flex-col min-w-0 break-words w-full shadow-lg bg-dark-200">
                         <img src="/images/services/1.jpg" alt="" class="w-full align-middle">
                         <div class="grid__item__content p-2">
@@ -105,7 +105,7 @@
                     <div class="w-full pr-0 md:pr-4 pb-10 md:pb-0">
                         <h3 class="font-semibold uppercase text-white text-3xl mb-10">SYDNEY REAL ESTATE MARKETING PROFESSIONALS</h3>
                         <div class="text-white">
-                            <p><em>V-Mark Design is the superior choice for Sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.<br></em>In one easy phone call we can arrange our experienced team of photographers, copywriters and Floor planners to make a one-off on-site visit, with guaranteed next day online delivery.</p>
+                            <p><em>PureView Design is the superior choice for Sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.<br></em>In one easy phone call we can arrange our experienced team of photographers, copywriters and Floor planners to make a one-off on-site visit, with guaranteed next day online delivery.</p>
                             <p>In one easy phone call we can arrange our experienced team of photographers, copywriters and Floor planners to make a one-off on-site visit, with guaranteed next day online delivery.</p>
                             <p>We offer a range of additional services to complement your marketing campaign including videos, virtual tours, aerial photography, photo retouching, graphic design and printed brochures and signboards.</p>
                             <button class="py-2 px-6 mt-8 uppercase text-white border border-solid border-white hover:bg-white hover:text-primary rounded block sm:inline-block transition-colors duration-300">Learn More</button>
@@ -158,7 +158,7 @@
 
     <!-- Section: Home Services Gallery -->
     <section class="home__services__gallery py-6">
-        <div class="container-full px-6 mx-auto">
+        <div class="container-full px-4 sm:px-6 mx-auto">
             <div class="services__gallery">
                 <div href="#" class="grid__sizer"></div>
                 <div class="grid__item grid__item--width2 p-1">
@@ -252,9 +252,9 @@
                     <h3 class="font-semibold uppercase text-4xl"><span style="color: #f14833;">Latest</span> news</h3>
                 </div>
             </div>
-            <div class="latest__blog flex flex-wrap py-8">
-                <article class="latest__blog__item w-full sm:w-6/12 lg:w-4/12 px-4 first">
-                    <div class="blog__item__wrapper">
+            <div class="block__list flex flex-wrap text-center lg:text-left py-8">
+                <article class="list__item w-full lg:w-4/12 sm:px-4 first">
+                    <div class="list__item__wrapper list__item__wrapper w-full sm:w-6/12 lg:w-full m-auto">
                         <div class="entry__image">
                             <a href="{{ route('frontend.post.show') }}">
                                 <img class="post-img" src="/images/blog/1.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
@@ -271,8 +271,8 @@
                     </div>
                 </article>
 
-                <article class="latest__blog__item w-full sm:w-6/12 lg:w-4/12 px-4 mt-8 sm:mt-0">
-                    <div class="blog__item__wrapper">
+                <article class="list__item w-full sm:w-6/12 lg:w-4/12 sm:px-4 mt-8 lg:mt-0">
+                    <div class="list__item__wrapper">
                         <div class="entry__image">
                             <a href="{{ route('frontend.post.show') }}">
                                 <img class="post-img" src="/images/blog/1.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">
@@ -289,8 +289,8 @@
                     </div>
                 </article>
 
-                <article class="latest__blog__item w-full lg:w-4/12 px-4 mt-8 lg:mt-0">
-                    <div class="blog__item__wrapper w-full sm:w-6/12 lg:w-full m-auto">
+                <article class="list__item w-full sm:w-6/12 lg:w-4/12 sm:px-4 mt-8 lg:mt-0">
+                    <div class="list__item__wrapper">
                         <div class="entry__image">
                             <a href="{{ route('frontend.post.show') }}">
                                 <img class="post-img" src="/images/blog/1.jpg" alt="At Mario's Always Fresh Cupcake Ice Cream?">

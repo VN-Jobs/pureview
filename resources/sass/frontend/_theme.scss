@@ -134,6 +134,7 @@ a {
 .ba__container {
     position: relative;
     overflow: hidden;
+    text-align: center;
 
     img {
         width: 100%;
@@ -220,51 +221,12 @@ a {
     }
 }
 
-// Home: Slider
-
-.swiper-button-next,
-.swiper-button-prev {
-    @apply text-white;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    &:before,
-    &:after {
-        display: none;
-    }
-}
-
-.swiper-container {
-    max-height: 700px;
-}
-
-.swiper-wrapper {
-    .slide__overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: transparent;
-        background-image: linear-gradient(135deg, rgb(48 48 48 / 0.7) 0%, rgb(255 255 255 / 0.7) 100%);
-        mix-blend-mode: multiply;
-    }
-
-    .slide__info {
-        position: absolute;
-        top: 30px;
-        left: 100px;
-        color: #fff;
-    }
-}
+// Menu
 
 .site__navigation__primary {
     ul.nav__wrapper {
-        li {
-            a {
+        .nav__item {
+            .nav__link {
                 font-size: 0.925rem;
                 display: flex;
                 align-items: center;
@@ -318,8 +280,8 @@ a {
             }
         }
 
-        > li {
-            > a {
+        > .nav__item {
+            > .nav__link {
                 padding-top: 2rem;
                 padding-bottom: 2rem;
 
@@ -357,52 +319,50 @@ a {
     }
 }
 
-// Gallery
-.services__gallery {
-    /* fluid 5 columns */
-    .grid__sizer,
-    .grid__item {
-        width: 25%;
+// Home: Slider
+
+.swiper-button-next,
+.swiper-button-prev {
+    @apply text-white;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    &:before,
+    &:after {
+        display: none;
+    }
+}
+
+.swiper-container {
+    max-height: 700px;
+}
+
+.swiper-wrapper {
+    .slide__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        background-image: linear-gradient(135deg, rgb(48 48 48 / 0.7) 0%, rgb(255 255 255 / 0.7) 100%);
+        mix-blend-mode: multiply;
     }
 
-    /* 2 columns */
-    .grid__item--width2 {
-        width: 50%;
+    .slide__info {
+        position: absolute;
+        top: 30px;
+        left: 100px;
+        color: #fff;
     }
 }
 
 .heading__slides {
     .swiper-container {
         max-height: 400px;
-    }
-}
-
-.home__request {
-    color: #ffffff;
-    background-image: url("/images/bg_request.jpg");
-    background-position: left top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    .request__form {
-        background-color: rgba(48, 48, 48, 0.7)
-    }
-}
-
-.home__cta2 {
-    color: #ffffff;
-    background-image: url("/images/bg_cta.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-
-    .cta__container {
-        background-color: rgba(48, 48, 48, 0.7);
     }
 }
 
@@ -477,6 +437,49 @@ a {
 }
 
 // Gallery
+.services__gallery {
+    /* fluid 5 columns */
+    .grid__sizer,
+    .grid__item {
+        width: 25%;
+    }
+
+    /* 2 columns */
+    .grid__item--width2 {
+        width: 50%;
+    }
+}
+
+.home__request {
+    color: #ffffff;
+    background-image: url("/images/bg_request.jpg");
+    background-position: left top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .request__form {
+        background-color: rgba(48, 48, 48, 0.7)
+    }
+}
+
+.home__cta2 {
+    color: #ffffff;
+    background-image: url("/images/bg_cta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+
+    .cta__container {
+        background-color: rgba(48, 48, 48, 0.7);
+    }
+}
+
+// Gallery
 #showcase__gallery {
     &.nanogallery_gallerytheme_dark_showcase__gallery {
         .nGY2GThumbnail {
@@ -491,6 +494,13 @@ a {
     .nGY2ViewerMediaLoaderHidden {
         -ms-touch-action: none;
         touch-action: none;
+    }
+}
+
+// Google map
+#google__map {
+    iframe {
+        width: 100% !important;
     }
 }
 

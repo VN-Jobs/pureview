@@ -1,0 +1,84 @@
+.login {
+  width: 100%;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login .card {
+  vertical-align: top;
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+  background: #fff;
+}
+
+.login .card .card-block {
+  padding: 3rem;
+}
+
+.login .card .card-block h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.login .card .card-block .input-group .input-group-addon {
+  border-radius: 0;
+  font-size: 2rem;
+}
+
+.login .card .card-block .input-group .form-control {
+  border-radius: 0;
+}
+
+.login .card .card-block .text-muted {
+  color: #B0bec5;
+}
+
+.login .card .card-block button.btn {
+  border-radius: 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.login .card .card-block button.btn .btn-primary {
+  background-color: #20a8d8;
+  border-color: #20a8d8;
+}
+
+.login .card .card-block button.btn .btn-primary:focus,
+.login .card .card-block button.btn .btn-primary:hover {
+  background-color: #1985ac;
+  border-color: #187fa3;
+}
+
+.login .card .card-block .btn-link {
+  padding-right: 0;
+}
+
+.login .card-login {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  float: left;
+  border: 1px solid #cfd8dc;
+}
+
+.login .card-login h1 {
+  color: black;
+}
+
+.login .card-text {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  float: left;
+  background-color: #22A5D5;
+}
+
+.login .card-text h2,
+.login .card-text p {
+  color: #fff;
+}
+

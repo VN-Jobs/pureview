@@ -1,4 +1,11 @@
 /*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!
  * Masonry v4.2.2
  * Cascading grid layout library
  * https://masonry.desandro.com
@@ -30,7 +37,18 @@
  */
 
 /*!
- * jQuery UI Widget 1.12.1
+ * jQuery Color Animations v2.1.2
+ * https://github.com/jquery/jquery-color
+ *
+ * Copyright 2014 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * Date: Wed Jan 16 08:47:09 2013 -0600
+ */
+
+/*!
+ * jQuery UI Effects 1.12.1
  * http://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors

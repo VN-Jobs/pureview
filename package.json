@@ -26,7 +26,7 @@
     "devDependencies": {
         "alpinejs": "^2.7.3",
         "animate.css": "^3.7.0",
-        "autoprefixer": "^10.0.4",
+        "autoprefixer": "^10.1.0",
         "axios": "^0.18",
         "bootstrap-sass": "^3.3.7",
         "cross-env": "^5.1",
@@ -50,7 +50,7 @@
         "sass": "^1.30.0",
         "sass-loader": "^8.0.2",
         "sweetalert2": "^6.11.1",
-        "swiper": "^4.5.0",
+        "swiper": "^6.3.5",
         "tailwindcss": "^1.8.0",
         "video.js": "^7.10.2",
         "videojs-plus": "^1.6.7",

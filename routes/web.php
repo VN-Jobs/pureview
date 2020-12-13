@@ -42,11 +42,7 @@ Route::get('/contact', function () {
     return view('frontend.pages.contact');
 })->name('frontend.pages.contact');
 
-Route::get('/blog', function () {})->name('blog');
-Route::get('/about', function () {})->name('about');
-Route::get('/contact', function () {})->name('contact');
 Route::get('category/{slug}', 'CategoryController@show')->name('category.show');
-Route::get('pricing', function () {})->name('pricing');
 
 Route::group(['namespace' => 'Backend'], function () {
     Auth::routes();

@@ -30,9 +30,7 @@ class PricingsSeeder extends Seeder
                 'price' => 'From 5.0$',
                 'description' => 'Adjusting brightest and contrast, highlighting features and lightening shadows.
 Replacing outdoor dusk sky.
-Turning on interior/exterior lighting and pool/garden lights.
-Adding fire to fireplace, moons and stars.
-Up to 12-24hrs Image Delivery',
+Turning on interior/exterior lighting and pool/garden lights.',
                 'link' => '#',
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -59,9 +57,7 @@ Up to 12-24hrs Image Delivery',
                 'description' => 'Color correction.
 Brightest/Contract Adjustment.
 Remove small spots, camera flashes, dust, glare, reflection…
-Add green grass, trees, and small objects like lamp, chair or table…
-Complete details for unfinished property.
-Up to 12-24hrs Image Delivery',
+Add green grass, trees, and small objects like lamp, chair or table…',
                 'link' => '#',
                 'created_at' => now(),
                 'updated_at' => now(),

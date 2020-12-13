@@ -141,6 +141,7 @@ return [
         'district' => 'Tỉnh',
         'is_redirect' => 'Chuyển tới CT',
         'avatar' => 'Avatar',
+        'partners' => 'Đối tác',
         'about_banner' => 'Banner About',
         'blog_banner' => 'Banner Blog',
         'contact_banner' => 'Banner Contact',
@@ -214,7 +215,7 @@ return [
     ],
 
     'home' => [
-        'name' => 'Đánh giá & Team',
+        'name' => 'Đối tác',
         'resource' => [
             'index' => 'Thông tin thông tin',
             'create' => 'Tạo mới thông tin',
@@ -234,6 +235,7 @@ return [
         'banner' => '( 1440x300 )',
         'banner_contact' => '( 555x278 )',
         'avatar' => '( 155x155 )',
+        'partners' => '( 150x100 )',
         'blog' => '( 540x135 )',
         'product' => '( 255x169 )',
         'category' => '( 350x233 )',

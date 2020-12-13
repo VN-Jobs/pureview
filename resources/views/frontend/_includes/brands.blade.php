@@ -9,27 +9,11 @@
             <div class="brands flex justify-between py-12">
                 <div class="swiper__brands swiper-container text-center">
                     <div class="swiper-wrapper">
+                        @foreach ($__partners as $partner)
                         <div class="swiper-slide">
-                            <img src="/images/brands/1.png" alt="Slide 1" class="inline-block">
+                            <img src="{{ publicSrc($partner->avatar) }}" alt="{{ $partner->company }}" class="inline-block">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="/images/brands/2.png" alt="Slide 1" class="inline-block">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/images/brands/3.png" alt="Slide 1" class="inline-block">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/images/brands/4.png" alt="Slide 1" class="inline-block">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/images/brands/5.png" alt="Slide 1" class="inline-block">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/images/brands/6.png" alt="Slide 1" class="inline-block">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/images/brands/7.png" alt="Slide 1" class="inline-block">
-                        </div>
+                        @endforeach
                     </div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next">

@@ -9,7 +9,7 @@ return [
         'limit' => 5,
     ],
     'contact' => [
-        'limit' => 5,
+        'limit' => 10,
     ],
     'about' => [
         'limit' => 5,

@@ -31,7 +31,10 @@ Route::get('/post/1', function () {
 })->name('frontend.post.show');
 
 Route::get('/pricing', function () {
-    return view('frontend.pages.pricing');
+    $compact['__pricings'] = app(\App\Contracts\Repositories\PricingRepository::class)->getData(
+        config('common.pricing.limit')
+    );
+    return view('frontend.pages.pricing', $compact);
 })->name('frontend.pages.pricing');
 
 Route::get('/about', function () {

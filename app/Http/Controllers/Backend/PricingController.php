@@ -32,7 +32,6 @@ class PricingController extends BackendController
     public function store(PricingRequest $request)
     {
         $data = $request->all();
-
         return $this->doRequest(function () use ($data) {
             return $this->dispatchNow(new StoreJob($data));
         }, __FUNCTION__, false, url()->previous());

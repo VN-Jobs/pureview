@@ -15,7 +15,7 @@ class ConfigsSeeder extends Seeder
         Config::truncate();
         app(Config::class)->create([
             'key' => 'name',
-            'value' => ['Realty-edits'],
+            'value' => ['Pureviewie'],
         ]);
 
         app(Config::class)->create([
@@ -71,6 +71,16 @@ class ConfigsSeeder extends Seeder
         app(Config::class)->create([
             'key' => 'address',
             'value' => ['CT1 A1 Building, Hoang Liet Str., Hoang Mai Dis., Hanoi, Vietnam, 100000'],
+        ]);
+
+        app(Config::class)->create([
+            'key' => 'pricing_header',
+            'value' => ['Pricing'],
+        ]);
+
+        app(Config::class)->create([
+            'key' => 'pricing_title',
+            'value' => ['Photo editing pricing. Contact with us!'],
         ]);
 
         app(Config::class)->create([
@@ -138,7 +148,7 @@ class ConfigsSeeder extends Seeder
             'key' => 'home',
             'value' => [
                 'who_we_are_image' => 'seeds/about-us/about.jpg',
-                'who_we_are' => 'Based in Hanoi, Realty-edits provides a high quality and dedicated photo editing service platform with the main focus on real estate photo editing sector for cooperation and individual clients around the world. Beyond in 2017, we have never stopped to improve and develop our full service solution to our photographers in line with the highest industry standards and customer expectations. Realty-edits is equipped with a highly talented and enthusiastic team of photo editors who reached outstanding level in editing techniques to guarantee the best quality and turnaround time.',
+                'who_we_are' => 'Based in Hanoi, Pureviewie provides a high quality and dedicated photo editing service platform with the main focus on real estate photo editing sector for cooperation and individual clients around the world. Beyond in 2017, we have never stopped to improve and develop our full service solution to our photographers in line with the highest industry standards and customer expectations. Pureviewie is equipped with a highly talented and enthusiastic team of photo editors who reached outstanding level in editing techniques to guarantee the best quality and turnaround time.',
                 'how_to' => [
                     0 => [
                         'icon' => 'ion ion-ios-ribbon',
@@ -171,7 +181,7 @@ class ConfigsSeeder extends Seeder
                         'description' => 'Your privacy and copyright are our prioirty',
                     ],
                 ],
-                'about_us' => "Realty-edits team located in Vietnam, serves you in a wide range of services including photo editing, floor plans, virtual staging and video listing as a best center for your promotional campaigns, expand your photography bussiness. Every job is processed with calibrated screens, top softwares, high connection internet, fast turnaround time, affordable price.\n\r \n\r Whether you are in real estate and need high-quality images to showcase a home or are presenting products to the retail market, Realty-edits will work with your images to get the best result for your needs. High quality photos are proven to increase sales and our editors will make your product or listing stand out from the competition.",
+                'about_us' => "Pureviewie team located in Vietnam, serves you in a wide range of services including photo editing, floor plans, virtual staging and video listing as a best center for your promotional campaigns, expand your photography bussiness. Every job is processed with calibrated screens, top softwares, high connection internet, fast turnaround time, affordable price.\n\r \n\r Whether you are in real estate and need high-quality images to showcase a home or are presenting products to the retail market, Pureviewie will work with your images to get the best result for your needs. High quality photos are proven to increase sales and our editors will make your product or listing stand out from the competition.",
             ],
         ]);
     }

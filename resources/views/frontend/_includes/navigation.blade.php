@@ -7,7 +7,7 @@
                     <!-- Logo -->
                     <div class="flex-shrink-0 flex items-center">
                         <a href="{{ route('frontend.home.index') }}" class="site__logo py-1">
-                            <img src="/images/logo.png" alt="" style="width: 64px; height:64px;">
+                            <img src="{{ publicSrc($configs['logo'][0] ?? null) }}" alt="logo" style="width: 64px; height:64px;">
                         </a>
                     </div>
 

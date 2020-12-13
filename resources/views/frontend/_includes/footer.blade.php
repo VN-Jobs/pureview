@@ -6,7 +6,7 @@
                     <div class="footer-col__container">
                         <div class="flex-shrink-0 flex items-center justify-center sm:justify-normal">
                             <a href="{{ route('frontend.home.index') }}">
-                                <img src="/images/logo.png" alt="" style="width: 64px; height:64px;">
+                                <img src="{{ publicSrc($configs['logo'][0] ?? null) }}" alt="logo" style="width: 64px; height:64px;">
                             </a>
                         </div>
                         <p class="mt-2">Pure-Views Design is the superior choice for sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.</p>
@@ -14,26 +14,12 @@
                 </div>
                 <div class="footer__col footer2">
                     <div class="footer-col__container pl-0 lg:pl-20 justify-center sm:justify-normal flex sm:block">
-                        <a class="block px-1 pt-3 text-sm font-medium leading-5 hover:text-primary focus:outline-none transition duration-150 ease-in-out" href="{{ route('frontend.home.index') }}" class="hover:text-primary">
+                        @foreach ($__menus as $menu)
+                        <a class="block px-1 pt-3 text-sm font-medium leading-5 hover:text-primary focus:outline-none transition duration-150 ease-in-out" href="{{ $menu->url }}" class="hover:text-primary">
                             <i class="las la-dot-circle mr-2 text-primary"></i>
-                            <span class="nav__text">{{ __('Home') }}</span>
+                            <span class="nav__text">{{ $menu->name }}</span>
                         </a>
-                        <a class="block px-1 pt-3 text-sm font-medium leading-5 hover:text-primary focus:outline-none transition duration-150 ease-in-out" href="#" class="hover:text-primary">
-                            <i class="las la-dot-circle mr-2 text-primary"></i>
-                            <span class="nav__text">{{ __('Services') }}</span>
-                        </a>
-                        <a class="block px-1 pt-3 text-sm font-medium leading-5 hover:text-primary focus:outline-none transition duration-150 ease-in-out" href="#" class="hover:text-primary">
-                            <i class="las la-dot-circle mr-2 text-primary"></i>
-                            <span class="nav__text">{{ __('Booking') }}</span>
-                        </a>
-                        <a class="block px-1 pt-3 text-sm font-medium leading-5 hover:text-primary focus:outline-none transition duration-150 ease-in-out" href="#" class="hover:text-primary">
-                            <i class="las la-dot-circle mr-2 text-primary"></i>
-                            <span class="nav__text">{{ __('News') }}</span>
-                        </a>
-                        <a class="block px-1 pt-3 text-sm font-medium leading-5 hover:text-primary focus:outline-none transition duration-150 ease-in-out" href="#" class="hover:text-primary">
-                            <i class="las la-dot-circle mr-2 text-primary"></i>
-                            <span class="nav__text">{{ __('Contact') }}</span>
-                        </a>
+                        @endforeach
                     </div>
                 </div>
                 <div class="footer-col footer3">

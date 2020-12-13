@@ -1,0 +1,15 @@
+@import "./../partials/uploadfile";
+@import "../../../bower/summernote/dist/summernote";
+@import "~fontawesome-iconpicker/dist/css/fontawesome-iconpicker.css";
+
+.tab-content {
+  .tab-pane {
+    margin: 20px 0;
+  }
+}
+
+#blog, #about, #contact {
+  .file-upload {
+    height: 300px;
+  }
+}

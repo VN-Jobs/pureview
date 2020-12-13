@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Cache;
 use App\Contracts\Repositories\ConfigRepository;
+use App\Contracts\Repositories\ContactRepository;
 use App\Contracts\Repositories\MenuRepository;
 use App\Contracts\Repositories\CategoryRepository;
 
@@ -35,6 +36,12 @@ class AppServiceProvider extends ServiceProvider
             }));
             $view->with('__categories', Cache::remember('__categories', 60, function () {
                 return app(CategoryRepository::class)->getRandom(5, ['name', 'slug']);
+            }));
+            $view->with('__partners', Cache::remember('__partners', 60, function () {
+                return app(ContactRepository::class)->getTestimonials(
+                    config('common.contact.limit'),
+                    ['avatar', 'email', 'company']
+                );
             }));
         });
     }

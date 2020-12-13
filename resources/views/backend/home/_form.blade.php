@@ -61,7 +61,7 @@
         </div>
     </div>
     <div class="col-sm-4">
-        {{ Form::label('name', __('repositories.label.avatar') . __('repositories.image_size.avatar'), ['class' => 'control-label']) }}
+        {{ Form::label('name', __('repositories.label.partners') . __('repositories.image_size.partners'), ['class' => 'control-label']) }}
         @component('backend._partials.components.uploadfile', ['imgFields' => (isset($item) && $item->avatar) ? $item->avatar : null])
         @slot('uploadFields')
             {{ Form::file('image', ['id' => 'image']) }}

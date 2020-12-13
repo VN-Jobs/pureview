@@ -19,9 +19,9 @@
         </div>
         <div class="form-group">
             {{ Form::label('home', 'WHO WE ARE?', ['class'=>'control-label']) }}
-            @component('backend._partials.components.uploadfile', ['imgFields' => $items->keyBy('key')['home']['value']['who_we_are_image'] ?? null])
+            @component('backend._partials.components.uploadfile', ['imgFields' => $items->keyBy('key')['home']['value']['who_we_are_image'] ?? null, 'elementFields' => 'who_we_are_image-upload'])
             @slot('uploadFields')
-                {{ Form::file('home[who_we_are_image]', ['id' => 'image']) }}
+                {{ Form::file('home[who_we_are_image]', ['id' => 'who_we_are_image']) }}
             @endslot
             @endcomponent
             {{ Form::textarea('home[who_we_are]', $items->keyBy('key')['home']['value']['who_we_are'] ?? null, ['class' => 'form-control', 'rows' => 6]) }}
@@ -32,10 +32,6 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">How to 1</div>
                         <div class="panel-body">
-                            <div class="form-group">
-                                {{ Form::label('home', 'Icon', ['class'=>'control-label']) }}
-                                {{ Form::text('home[how_to][0][icon]', $items->keyBy('key')['home']['value']['how_to'][0]['icon'] ?? null, ['class' => 'form-control icon-picker']) }}
-                            </div>
                             <div class="form-group">
                                 {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
                                 {{ Form::text('home[how_to][0][title]', $items->keyBy('key')['home']['value']['how_to'][0]['title'] ?? null, ['class' => 'form-control']) }}
@@ -51,10 +47,6 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">How to 2</div>
                         <div class="panel-body">
-                            <div class="form-group">
-                                {{ Form::label('home', 'Icon', ['class'=>'control-label']) }}
-                                {{ Form::text('home[how_to][1][icon]', $items->keyBy('key')['home']['value']['how_to'][1]['icon'] ?? null, ['class' => 'form-control icon-picker']) }}
-                            </div>
                             <div class="form-group">
                                 {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
                                 {{ Form::text('home[how_to][1][title]', $items->keyBy('key')['home']['value']['how_to'][1]['title'] ?? null, ['class' => 'form-control']) }}
@@ -75,10 +67,6 @@
                         <div class="panel-heading">How to 3</div>
                         <div class="panel-body">
                             <div class="form-group">
-                                {{ Form::label('home', 'Icon', ['class'=>'control-label']) }}
-                                {{ Form::text('home[how_to][2][icon]', $items->keyBy('key')['home']['value']['how_to'][2]['icon'] ?? null, ['class' => 'form-control icon-picker']) }}
-                            </div>
-                            <div class="form-group">
                                 {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
                                 {{ Form::text('home[how_to][2][title]', $items->keyBy('key')['home']['value']['how_to'][2]['title'] ?? null, ['class' => 'form-control']) }}
                             </div>
@@ -93,10 +81,6 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">How to 4</div>
                         <div class="panel-body">
-                            <div class="form-group">
-                                {{ Form::label('home', 'Icon', ['class'=>'control-label']) }}
-                                {{ Form::text('home[how_to][3][icon]', $items->keyBy('key')['home']['value']['how_to'][3]['icon'] ?? null, ['class' => 'form-control icon-picker']) }}
-                            </div>
                             <div class="form-group">
                                 {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
                                 {{ Form::text('home[how_to][3][title]', $items->keyBy('key')['home']['value']['how_to'][3]['title'] ?? null, ['class' => 'form-control']) }}
@@ -117,10 +101,6 @@
                         <div class="panel-heading">How to 5</div>
                         <div class="panel-body">
                             <div class="form-group">
-                                {{ Form::label('home', 'Icon', ['class'=>'control-label']) }}
-                                {{ Form::text('home[how_to][4][icon]', $items->keyBy('key')['home']['value']['how_to'][4]['icon'] ?? null, ['class' => 'form-control icon-picker']) }}
-                            </div>
-                            <div class="form-group">
                                 {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
                                 {{ Form::text('home[how_to][4][title]', $items->keyBy('key')['home']['value']['how_to'][4]['title'] ?? null, ['class' => 'form-control']) }}
                             </div>
@@ -135,10 +115,6 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">How to 6</div>
                         <div class="panel-body">
-                            <div class="form-group">
-                                {{ Form::label('home', 'Icon', ['class'=>'control-label']) }}
-                                {{ Form::text('home[how_to][5][icon]', $items->keyBy('key')['home']['value']['how_to'][5]['icon'] ?? null, ['class' => 'form-control icon-picker']) }}
-                            </div>
                             <div class="form-group">
                                 {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
                                 {{ Form::text('home[how_to][5][title]', $items->keyBy('key')['home']['value']['how_to'][5]['title'] ?? null, ['class' => 'form-control']) }}

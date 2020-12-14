@@ -10,42 +10,36 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::get('/', function () {
-//     return view('welcome');
-// })->name('frontend.home.index');
 
-Route::get('/', function () {
-    return view('frontend.home.index');
-})->name('frontend.home.index');
+Route::group([
+    'as' => 'frontend.',
+    'namespace' => 'Frontend'
+], function () {
+    Route::get('/', 'HomeController@index')->name('home.index');
+    Route::get('/blog', 'PostController@index')->name('blog.index');
+    Route::get('/blog/{slug}', 'PostController@show')->name('blog.show');
+    Route::get('/category', 'CategoryController@index')->name('category.index');
+    Route::get('/category/{slug}', 'CategoryController@show')->name('category.show');
 
-Route::get('/services/1', function () {
-    return view('frontend.service.show');
-})->name('frontend.service.show');
+    Route::get('/pricing', function () {
+        $compact['__pricings'] = app(\App\Contracts\Repositories\PricingRepository::class)->getData(
+            config('common.pricing.limit')
+        );
+        return view('frontend.page.pricing', $compact);
+    })->name('page.pricing');
 
-Route::get('/post', function () {
-    return view('frontend.post.index');
-})->name('frontend.post.index');
+    Route::get('/about', function () {
+        return view('frontend.page.about');
+    })->name('page.about');
 
-Route::get('/post/1', function () {
-    return view('frontend.post.show');
-})->name('frontend.post.show');
+    Route::get('/contact', function () {
+        return view('frontend.page.contact');
+    })->name('page.contact');
 
-Route::get('/pricing', function () {
-    $compact['__pricings'] = app(\App\Contracts\Repositories\PricingRepository::class)->getData(
-        config('common.pricing.limit')
-    );
-    return view('frontend.pages.pricing', $compact);
-})->name('frontend.pages.pricing');
+    Route::post('home/contact', 'HomeController@storeContact')->name('home.contact');
+});
 
-Route::get('/about', function () {
-    return view('frontend.pages.about');
-})->name('frontend.pages.about');
-
-Route::get('/contact', function () {
-    return view('frontend.pages.contact');
-})->name('frontend.pages.contact');
-
-Route::get('category/{slug}', 'CategoryController@show')->name('category.show');
+// Route::get('category/{slug}', 'CategoryController@show')->name('category.show');
 
 Route::group(['namespace' => 'Backend'], function () {
     Auth::routes();

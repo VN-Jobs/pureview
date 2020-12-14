@@ -111,6 +111,7 @@ button,
             > .nav__link {
                 padding-top: 2rem;
                 padding-bottom: 2rem;
+                text-transform: capitalize;
 
                 &:hover,
                 &.is--active {

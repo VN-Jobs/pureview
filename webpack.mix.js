@@ -16,26 +16,26 @@ mix.copyDirectory('resources/images', 'public/images');
 mix.copyDirectory('node_modules/line-awesome/dist/font-awesome-line-awesome/webfonts', 'public/css/webfonts');
 mix.copyDirectory('node_modules/line-awesome/dist/line-awesome/fonts', 'public/css/fonts');
 
-mix.sass('resources/sass/app.scss', 'public/css')
-    .options({
-        postCss: [
-            require('postcss-css-variables')(),
-            require('tailwindcss')('tailwind.config.js'),
-            require('autoprefixer'),
-        ]
-    });
+// mix.sass('resources/sass/app.scss', 'public/css')
+//     .options({
+//         postCss: [
+//             require('postcss-css-variables')(),
+//             require('tailwindcss')('tailwind.config.js'),
+//             require('autoprefixer'),
+//         ]
+//     });
 
-mix.js('resources/js/app.js', 'public/js')
-    .extract([
-        /* - Auth and other page - Extract packages from node_modules to vendor.js */
-        'jquery',
-    ], 'public/js/vendor');
+// mix.js('resources/js/app.js', 'public/js')
+//     .extract([
+//         /* - Auth and other page - Extract packages from node_modules to vendor.js */
+//         'jquery',
+//     ], 'public/js/vendor');
 
 if (process.env.side) {
     require(`${__dirname}/webpack.mix.${process.env.side}.js`);
 } else {
-    // require(`${__dirname}/webpack.mix.backend.js`);
     require(`${__dirname}/webpack.mix.frontend.js`);
+    require(`${__dirname}/webpack.mix.backend.js`);
 }
 
 if (mix.inProduction()) {

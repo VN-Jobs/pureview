@@ -135,7 +135,7 @@ class ConfigsSeeder extends Seeder
         app(Config::class)->create([
             'key' => 'contact',
             'value' => [
-                'description' => 'pureviewie – Work 24/7',
+                'description' => 'Work 24/7. PureView is specialized in working with professional visualizations for the real estate.',
                 'banner' => 'seeds/bg-head.jpg',
                 'custom_service' => "Contact us by phone, live chat and email\n\r \n\rPhone: (+84) 97 6243 323\n\rEmail: contact@pureviewie.com",
                 'banner_1' => 'seeds/contact1.jpg',

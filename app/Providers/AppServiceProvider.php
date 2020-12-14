@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Schema;
 use App\Contracts\Repositories\ConfigRepository;
 use App\Contracts\Repositories\ContactRepository;
 use App\Contracts\Repositories\MenuRepository;
@@ -53,6 +54,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Schema::defaultStringLength(191);
     }
 }

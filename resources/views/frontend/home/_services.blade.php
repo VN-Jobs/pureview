@@ -2,8 +2,8 @@
     <div class="container-full mx-auto">
         <div class="justify-center text-center flex flex-wrap">
             <div class="max-w-2xl px-12 md:px-4">
-                <h3 class="font-semibold uppercase text-3xl md:text-4xl"><span style="color: #f14833;">Our</span> services</h3>
-                <p class="text-lg leading-relaxed mt-4 mb-4">Pure-Views Design is the superior choice for sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.</p>
+                <h3 class="font-semibold uppercase text-3xl md:text-4xl"><span style="color: #f14833;">Our</span> {{ $configs['home']['how_to'][0]['title'] ?? null }}</h3>
+                <p class="text-lg leading-relaxed mt-4 mb-4">{{ $configs['home']['how_to'][0]['description'] ?? null }}</p>
             </div>
         </div>
         <div class="services__grid py-8">

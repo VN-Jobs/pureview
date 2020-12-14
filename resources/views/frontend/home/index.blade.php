@@ -15,9 +15,6 @@
     <!-- Section: Home Request -->
     @include('frontend.home._contact')
 
-    <!-- Section: Services Gallery -->
-    @include('frontend.home._service-gallery')
-
     <!-- Section: Latest Blog -->
     @include('frontend.home._latest-blog')
 

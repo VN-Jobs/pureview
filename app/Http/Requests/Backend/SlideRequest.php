@@ -16,12 +16,12 @@ class SlideRequest extends Request
         if ($this->slide) {
             return [
                 'description' => 'nullable|max:200',
-                'image'=> 'nullable|nullable|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+                'image'=> 'nullable|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
             ];
         } else {
             return [
                 'description' => 'nullable|max:200',
-                'image'=> 'required|nullable|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+                'image'=> 'required|nullable|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
             ];
         }
     }

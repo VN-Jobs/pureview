@@ -24,7 +24,7 @@ return [
         'destroy' => 'Huỷ',
         'back' => 'Quay lại',
         'list' => 'Danh sách',
-        'category' => 'Danh mục',
+        'category' => 'Services',
         'product' => 'Sản phẩm',
         'post' => 'Bài viết',
         'article' => 'Bài viết',
@@ -87,7 +87,7 @@ return [
         'content' => 'Nội dung',
         'banner' => 'Ảnh banner',
         'username' => 'Tên đăng nhập',
-        'category_id' => 'Danh mục',
+        'category_id' => 'Services',
         'category_ids' => 'Nhóm sản phẩm',
         'image_before_src' => 'Hình ảnh trước',
         'image_after_src' => 'Hình ảnh sau',
@@ -191,7 +191,7 @@ return [
 
     'sweetalert' => [
         'question' => 'Bạn chắc chắn?',
-        'question_category' => 'Nếu xoá danh mục, Slide, Sản phẩm, Bộ sưu tập Có liên quan cũng sẽ bị xoá theo.',
+        'question_category' => 'Nếu xoá Services, Slide, Sản phẩm, Bộ sưu tập Có liên quan cũng sẽ bị xoá theo.',
         'ok' => 'Đồng ý',
         'cancel' => 'Huỷ',
     ],
@@ -224,7 +224,7 @@ return [
     ],
 
     'category' => [
-        'name' => 'Danh mục',
+        'name' => 'Services',
         'banner' => 'Ảnh nền ( 1170x445 )',
         'image' => 'Ảnh đại diện ( 640 x 480 )',
         'icon' => 'Ảnh menu ( 100 x 100 )',
@@ -281,11 +281,11 @@ return [
     ],
 
     'product' => [
-        'name' => 'Sản phẩm',
+        'name' => 'Hình ảnh',
         'resource' => [
-            'index' => 'Danh sách sản phẩm',
-            'create' => 'Tạo mới sản phẩm',
-            'edit' => 'Cập nhật sản phẩm',
+            'index' => 'Danh sách hình ảnh',
+            'create' => 'Tạo mới hình ảnh',
+            'edit' => 'Cập nhật hình ảnh',
         ]
     ],
 

@@ -9,7 +9,7 @@
                                 <img src="{{ publicSrc($configs['logo'][0] ?? null) }}" alt="logo" style="width: 64px; height:64px;">
                             </a>
                         </div>
-                        <p class="mt-2">Pure-Views Design is the superior choice for sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.</p>
+                        <p class="mt-2">{{ $configs['home']['how_to'][3]['description'] ?? null }}</p>
                     </div>
                 </div>
                 <div class="footer__col footer2">

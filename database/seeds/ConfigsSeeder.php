@@ -152,33 +152,28 @@ class ConfigsSeeder extends Seeder
                 'how_to' => [
                     0 => [
                         'icon' => 'ion ion-ios-ribbon',
-                        'title' => 'Top Quality',
-                        'description' => 'Upload your photos from your mobile, tablet or desktop computer.',
+                        'title' => 'Services',
+                        'description' => 'Pure-Views Design is the superior choice for sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.',
                     ],
                     1 => [
                         'icon' => 'ion ion-ios-planet',
-                        'title' => 'Excellent Communication',
-                        'description' => 'Our team of professional editors will perform over 16 editing tasks on your images within 24 hours.',
+                        'title' => 'SYDNEY REAL ESTATE MARKETING PROFESSIONALS',
+                        'description' => 'PureView Design is the superior choice for Sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.
+In one easy phone call we can arrange our experienced team of photographers, copywriters and Floor planners to make a one-off on-site visit, with guaranteed next day online delivery.
+
+In one easy phone call we can arrange our experienced team of photographers, copywriters and Floor planners to make a one-off on-site visit, with guaranteed next day online delivery.
+
+We offer a range of additional services to complement your marketing campaign including videos, virtual tours, aerial photography, photo retouching, graphic design and printed brochures and signboards.',
                     ],
                     2 => [
                         'icon' => 'ion ion-ios-people',
-                        'title' => 'Professional Team',
-                        'description' => 'Each image is viewed & checked by our quality control team.',
+                        'title' => 'REAL ESTATE MARKETING PROFESSIONALS',
+                        'description' => 'Pure Views are the exceptional option for property specialists in need of prompt, professional and cost effective promotional solutions.',
                     ],
                     3 => [
                         'icon' => 'ion ion-ios-globe',
-                        'title' => 'Worldwide services',
-                        'description' => 'Our clients are all around the the world.',
-                    ],
-                    4 => [
-                        'icon' => 'ion ion-ios-rocket',
-                        'title' => 'Fast Turnaround Time',
-                        'description' => 'Download the professionally edited images from your account as soon as they are complete.',
-                    ],
-                    5 => [
-                        'icon' => 'ion ion-ios-unlock',
-                        'title' => 'Security',
-                        'description' => 'Your privacy and copyright are our prioirty',
+                        'title' => 'Pure-Views',
+                        'description' => 'Pure-Views Design is the superior choice for sydney real estate marketing professionals and property developers looking to create a distinct and polished marketing campaign.',
                     ],
                 ],
                 'about_us' => "Pureviewie team located in Vietnam, serves you in a wide range of services including photo editing, floor plans, virtual staging and video listing as a best center for your promotional campaigns, expand your photography bussiness. Every job is processed with calibrated screens, top softwares, high connection internet, fast turnaround time, affordable price.\n\r \n\r Whether you are in real estate and need high-quality images to showcase a home or are presenting products to the retail market, Pureviewie will work with your images to get the best result for your needs. High quality photos are proven to increase sales and our editors will make your product or listing stand out from the competition.",

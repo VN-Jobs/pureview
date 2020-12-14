@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="panel panel-default">
-                        <div class="panel-heading">How to 1</div>
+                        <div class="panel-heading">Block 1 (OUR SERVICES)</div>
                         <div class="panel-body">
                             <div class="form-group">
                                 {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
@@ -45,7 +45,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="panel panel-default">
-                        <div class="panel-heading">How to 2</div>
+                        <div class="panel-heading">Block 2 (Contact)</div>
                         <div class="panel-body">
                             <div class="form-group">
                                 {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
@@ -64,7 +64,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="panel panel-default">
-                        <div class="panel-heading">How to 3</div>
+                        <div class="panel-heading">Block 3 (Get pricing)</div>
                         <div class="panel-body">
                             <div class="form-group">
                                 {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
@@ -79,7 +79,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="panel panel-default">
-                        <div class="panel-heading">How to 4</div>
+                        <div class="panel-heading">Block 4 (Footer)</div>
                         <div class="panel-body">
                             <div class="form-group">
                                 {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
@@ -88,40 +88,6 @@
                             <div class="form-group">
                                 {{ Form::label('home', 'Description', ['class'=>'control-label']) }}
                                 {{ Form::textarea('home[how_to][3][description]', $items->keyBy('key')['home']['value']['how_to'][3]['description'] ?? null, ['class' => 'form-control', 'rows' => 3]) }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">How to 5</div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
-                                {{ Form::text('home[how_to][4][title]', $items->keyBy('key')['home']['value']['how_to'][4]['title'] ?? null, ['class' => 'form-control']) }}
-                            </div>
-                            <div class="form-group">
-                                {{ Form::label('home', 'Description', ['class'=>'control-label']) }}
-                                {{ Form::textarea('home[how_to][4][description]', $items->keyBy('key')['home']['value']['how_to'][3]['description'] ?? null, ['class' => 'form-control', 'rows' => 3]) }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">How to 6</div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                {{ Form::label('home', 'Title', ['class'=>'control-label']) }}
-                                {{ Form::text('home[how_to][5][title]', $items->keyBy('key')['home']['value']['how_to'][5]['title'] ?? null, ['class' => 'form-control']) }}
-                            </div>
-                            <div class="form-group">
-                                {{ Form::label('home', 'Description', ['class'=>'control-label']) }}
-                                {{ Form::textarea('home[how_to][5][description]', $items->keyBy('key')['home']['value']['how_to'][3]['description'] ?? null, ['class' => 'form-control', 'rows' => 3]) }}
                             </div>
                         </div>
                     </div>

@@ -28,7 +28,7 @@ class MenuController extends BackendController
         $this->compacts['categories'] = $this->repoCategory
             ->getDataByType(config('common.category.type.0'), $this->categorySelect)
             ->mapWithKeys(function ($item) {
-                $url = parse_url(route('category.show', $item['slug']), PHP_URL_PATH);
+                $url = parse_url(route('frontend.category.show', $item['slug']), PHP_URL_PATH);
                 return [$url => $item['name']];
             })
             ->prepend('---', '#');

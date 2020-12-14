@@ -200,7 +200,9 @@
 
     function beforeAfter() {
         if ($('.ba__container').length) {
-            $('.ba__container').beforeAfter();
+            $('.ba__container').each(function () {
+                $(this).beforeAfter();
+            });
         }
     }
 

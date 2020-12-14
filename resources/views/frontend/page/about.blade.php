@@ -4,11 +4,11 @@
 
 @section('content')
     <!-- Section: Heading Slides -->
-    <section class="heading__slides">
+    <section class="heading__slides" style="background-image: url({{ publicSrc($configs["about"]["banner"]) }});">
         <div class="heading__container flex items-center mx-auto">
             <div class="container mx-auto text-center">
                 <h2 class="heading__title font-semibold uppercase text-white text-3xl md:text-4xl mb-4">About us</h2>
-                <p class="heading__desc"><em>PureView is specialized in working with professional visualizations for the real estate</em></p>
+                <p class="heading__desc"><em>{{ $configs["about"]["description"] }}</em></p>
             </div>
         </div>
     </section>
@@ -26,11 +26,7 @@
                         <div class="w-full pr-4">
                             <h3 class="font-semibold uppercase text-2xl mb-10">WHO ARE WE?</h3>
                             <div class="mb-2">
-                                <p>PureView  is a real estate photo editing team based in Vietnam. Founded in 2017.
-PureView  is one of the world's leading real estate editing teams specializing in editing, processing images and 3D images.
-Customers of PureView are real estate agents and real estate marketing companies in Europe, the United States and Australia. We is always ready to provide fast service, innovative solutions and best quality.
-
-Based on low cost but high quality production, fast turnaround time, well-educated and hard-working staff, as well as advanced technology and updates, we are ready to provide you with Good and cheap quality graphic packages to accelerate your brokerage service. To receive a free prototype, details of our quote or any other information, please contact us.</p>
+                                <p>{{ $configs["about"]["information"] }}</p>
                             </div>
                         </div>
 

@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 
-@section('title', __('Contact us'))
+@section('title', __('Pricing'))
 
 @section('content')
     <!-- Section: Pricing -->

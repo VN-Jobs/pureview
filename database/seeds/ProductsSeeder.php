@@ -62,6 +62,17 @@ class ProductsSeeder extends Seeder
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
+                [
+                    'category_id' => $item->id,
+                    'name' => 'Awesome',
+                    'description' => 'Great curb appeal is essential when selling a home and it’s important in photos, too. Take this chance to show buyers just how cute a three-piece garden setting can be in the front yard or add a timber bench near the flowers to show how the front yard can be utilised.',
+                    'image_before_src' => 'seeds/products/product-12-before.jpg.webp',
+                    'image_after_src' => 'seeds/products/product-12-after.jpg.webp',
+                    'image_before_title' => 'seeds/products/product-12-before.jpg.webp',
+                    'image_after_title' => 'seeds/products/product-12-after.jpg.webp',
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now(),
+                ],
             ];
             Product::insert($data);
         }

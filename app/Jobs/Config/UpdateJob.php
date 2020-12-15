@@ -42,11 +42,11 @@ class UpdateJob extends Job
             $data['logo'] = [$logo->src];
         }
 
-        if (!empty($this->params['home']['who_we_are_image'])) {
-            $homeWhoWeAreImage = $this->uploadFile($this->params['home']['who_we_are_image']);
-            $data['home']['who_we_are_image'] = $homeWhoWeAreImage->src;
+        if (!empty($this->params['about']['image'])) {
+            $aboutImage = $this->uploadFile($this->params['about']['image']);
+            $data['about']['image'] = $aboutImage->src;
         } else {
-            $data['home']['who_we_are_image'] = $items->keyBy('key')['home']['value']['who_we_are_image'] ?? null;
+            $data['about']['image'] = $items->keyBy('key')['about']['value']['banner'] ?? null;
         }
 
         if (!empty($this->params['about']['banner'])) {

@@ -11,6 +11,7 @@ class Contact extends Model
         'last_name',
         'email',
         'company',
+        'phone',
         'message',
         'is_home',
         'is_team',
@@ -23,6 +24,7 @@ class Contact extends Model
             ->orWhere('last_name', 'LIKE', "{$keywords}%")
             ->orWhere('email', 'LIKE', "{$keywords}%")
             ->orWhere('company', 'LIKE', "{$keywords}%")
+            ->orWhere('phone', 'LIKE', "{$keywords}%")
             ->orWhere('message', 'LIKE', "%{$keywords}%");
     }
 }

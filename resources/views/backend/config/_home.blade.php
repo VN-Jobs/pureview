@@ -18,15 +18,6 @@
             {{ Form::textarea('description[]', $items->keyBy('key')['description']['value'][0] ?? null, ['class' => 'form-control', 'rows' => 2]) }}
         </div>
         <div class="form-group">
-            {{ Form::label('home', 'WHO WE ARE?', ['class'=>'control-label']) }}
-            @component('backend._partials.components.uploadfile', ['imgFields' => $items->keyBy('key')['home']['value']['who_we_are_image'] ?? null, 'elementFields' => 'who_we_are_image-upload'])
-            @slot('uploadFields')
-                {{ Form::file('home[who_we_are_image]', ['id' => 'who_we_are_image']) }}
-            @endslot
-            @endcomponent
-            {{ Form::textarea('home[who_we_are]', $items->keyBy('key')['home']['value']['who_we_are'] ?? null, ['class' => 'form-control', 'rows' => 6]) }}
-        </div>
-        <div class="form-group">
             <div class="row">
                 <div class="col-md-6">
                     <div class="panel panel-default">

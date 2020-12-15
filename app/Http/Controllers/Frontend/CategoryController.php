@@ -49,7 +49,7 @@ class CategoryController extends FrontendController
             $category->id,
             ['id', 'name', 'image_before_src', 'image_before_title', 'image_after_src', 'image_after_title', 'description', 'category_id']
         );
-        $this->compacts['service'] = count($this->compacts['services']) ? $this->compacts['services'][0] : null;
+        // $this->compacts['service'] = count($this->compacts['services']) ? $this->compacts['services'][0] : null;
 
         return $this->viewRender();
     }

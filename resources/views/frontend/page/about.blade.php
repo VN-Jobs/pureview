@@ -19,7 +19,7 @@
             <div class="container mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-center lg:text-left">
                     <div class="w-full">
-                        <img src="/images/about.jpg" alt="PureView" class="mx-auto lg:mx-0 mb-10 lg:mb-0">
+                        <img src="{{ publicSrc($configs["about"]["image"]) }}" alt="{{ $configs["name"][0] ?? null }}" class="mx-auto lg:mx-0 mb-10 lg:mb-0">
                     </div>
 
                     <div class="w-full pr-4">
@@ -37,7 +37,7 @@
     </section>
 
     <!-- Section: About Teams -->
-    <section class="about__teams">
+    {{-- <section class="about__teams">
         <div class="py-12 lg:py-20">
             <div class="container mx-auto">
                 <div class="block__team block sm:flex">
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- Section: Our Partners -->
     @include('frontend._includes.brands')

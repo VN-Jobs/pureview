@@ -1,18 +1,1 @@
-(function ($) {
-    "use strict";
-
-    $(document).ready(function () {
-        // $("#showcase__gallery").nanogallery2({
-        //     thumbnailHeight:  150,
-        //     thumbnailWidth:   150,
-        //     itemsBaseURL:     'http://demo.test/images/services/',
-
-        //     // ### gallery content ###
-        //     items: [
-        //         { src: '1.jpg', srct: '1.jpg', title: 'Title Image 1' },
-        //         { src: '2.jpg', srct: '2.jpg', title: 'Title Image 2' },
-        //         { src: '4.jpg', srct: '4.jpg', title: 'Title Image 3' }
-        //     ]
-        // });
-    });
-})(window.$);
+!function(e,i){"use strict";e(document).ready(function(){var e=new i.Swiper(".gallery-thumbs",{spaceBetween:10,slidesPerView:4,freeMode:!0,watchSlidesVisibility:!0,watchSlidesProgress:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});new i.Swiper(".gallery-top",{spaceBetween:10,simulateTouch:!1,thumbs:{swiper:e}})})}(window.$,window.swiper);

@@ -9,6 +9,8 @@
         ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>
         <strong>Tên người dùng:</strong> {{ $name }}<br>
         <strong>Email:</strong> {{ $email }}<br>
+        <strong>Phone:</strong> {{ $phone }}<br>
+        <strong>Company:</strong> {{ $company }}<br>
         <strong>Thông điệp:</strong> {{ $content }}<br>
 
         ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>

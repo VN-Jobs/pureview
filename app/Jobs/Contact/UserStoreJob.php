@@ -18,6 +18,8 @@ class UserStoreJob extends Job
     protected $fillable = [
         'name',
         'email',
+        'company',
+        'phone',
         'message',
     ];
 
@@ -38,6 +40,8 @@ class UserStoreJob extends Job
         Mail::queue(new CreateContact([
             'name' => $data['name'],
             'email' => $data['email'],
+            'company' => $data['company'],
+            'phone' => $data['phone'],
             'content' => $data['message'],
         ]));
     }

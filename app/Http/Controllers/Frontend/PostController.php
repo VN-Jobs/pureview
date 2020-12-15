@@ -25,7 +25,6 @@ class PostController extends FrontendController
     {
         $this->view = 'blog.show';
         $this->compacts['post'] = $this->repository->findBySlug($slug);
-        $this->compacts['heading'] = $this->compacts['post']->ceo_title;
 
         // SEO
         $this->compacts['heading'] = $this->compacts['post']->ceo_title ?? $this->compacts['post']->name;

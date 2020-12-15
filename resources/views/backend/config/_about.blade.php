@@ -15,6 +15,14 @@
     </div>
 </div>
 <div class="form-group">
-    {{ Form::label('description', 'WHO ARE WE?', ['class'=>'control-label']) }}
+    {{ Form::label('about_image', 'About Image', ['class'=>'control-label']) }}
+    @component('backend._partials.components.uploadfile', ['imgFields' => $items->keyBy('key')['about']['value']['image'] ?? null, 'elementFields' => 'about_image-upload'])
+    @slot('uploadFields')
+        {{ Form::file('about[image]', ['id' => 'about_image']) }}
+    @endslot
+    @endcomponent
+</div>
+<div class="form-group">
+    {{ Form::label('information', 'WHO ARE WE?', ['class'=>'control-label']) }}
     {{ Form::textarea('about[information]', $items->keyBy('key')['about']['value']['information'] ?? null, ['class' => 'form-control', 'rows' => 6]) }}
 </div>

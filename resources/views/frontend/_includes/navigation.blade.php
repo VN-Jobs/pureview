@@ -19,16 +19,16 @@
                                 <span class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out">
                                     <span class="nav__text">{{ $menu->name }}</span>
                                     @include('components.svg-angle-down')
-                                    <ul class="nav__sub">
-                                        @foreach ($menu->children as $subMenu)
-                                        <li class="nav__item{{ isActiveRoute(array_merge([$menu->url], $menu->children->pluck('url')->toArray())) }}">
-                                            <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ isActiveRoute(array_merge([$menu->url], $menu->children->pluck('url')->toArray())) }}" href="{{ $subMenu->url }}">
-                                                <span class="nav__text">{{ $subMenu->name }}</span>
-                                            </a>
-                                        </li>
-                                        @endforeach
-                                    </ul>
                                 </span>
+                                <ul class="nav__sub">
+                                    @foreach ($menu->children as $subMenu)
+                                    <li class="nav__item{{ isActiveRoute(array_merge([$menu->url], $menu->children->pluck('url')->toArray())) }}">
+                                        <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ isActiveRoute(array_merge([$menu->url], $menu->children->pluck('url')->toArray())) }}" href="{{ $subMenu->url }}">
+                                            <span class="nav__text">{{ $subMenu->name }}</span>
+                                        </a>
+                                    </li>
+                                    @endforeach
+                                </ul>
                             </li>
                             @else
                             <li class="nav__item {{ isActiveRoute(array_merge([$menu->url], $menu->children->pluck('url')->toArray())) }}">
@@ -63,16 +63,16 @@
                         <span class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out">
                             <span class="nav__text">{{ $menu->name }}</span>
                             @include('components.svg-angle-down')
-                            <ul class="nav__sub">
-                                @foreach ($menu->children as $subMenu)
-                                <li class="nav__item {{ isActiveRoute(array_merge([$menu->url], $menu->children->pluck('url')->toArray())) }}">
-                                    <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ isActiveRoute(array_merge([$menu->url], $menu->children->pluck('url')->toArray())) }}" href="{{ $subMenu->url }}">
-                                        <span class="nav__text">{{ $subMenu->name }}</span>
-                                    </a>
-                                </li>
-                                @endforeach
-                            </ul>
                         </span>
+                        <ul class="nav__sub">
+                            @foreach ($menu->children as $subMenu)
+                            <li class="nav__item {{ isActiveRoute(array_merge([$menu->url], $menu->children->pluck('url')->toArray())) }}">
+                                <a class="nav__link inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out{{ isActiveRoute(array_merge([$menu->url], $menu->children->pluck('url')->toArray())) }}" href="{{ $subMenu->url }}">
+                                    <span class="nav__text">{{ $subMenu->name }}</span>
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
                     </li>
                     @else
                     <li class="nav__item {{ isActiveRoute(array_merge([$menu->url], $menu->children->pluck('url')->toArray())) }}">

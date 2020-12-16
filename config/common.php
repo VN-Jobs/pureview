@@ -8,9 +8,6 @@ return [
     'slide' => [
         'limit' => 5,
     ],
-    'gallery' => [
-        'limit' => 8,
-    ],
     'blog' => [
         'limit' => 3,
     ],

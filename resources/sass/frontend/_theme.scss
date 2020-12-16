@@ -125,6 +125,17 @@ button,
 .site__navigation__mobile {
     .nav__wrapper {
         height: 100vh;
+
+        > .nav__item {
+            > .nav__link {
+                text-transform: capitalize;
+
+                &:hover,
+                &.is--active {
+                    color: #f14833;
+                }
+            }
+        }
     }
 
     .nav__item {
@@ -181,8 +192,8 @@ button,
         ul.nav__wrapper {
             > .nav__item {
                 > .nav__link {
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
+                    padding-top: 1.6rem;
+                    padding-bottom: 1.6rem;
                 }
             }
         }

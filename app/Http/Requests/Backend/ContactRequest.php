@@ -21,7 +21,7 @@ class ContactRequest extends Request
     {
         return [
             'first_name' => 'required|min:2|max:175',
-            'image'=> 'nullable|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+            'image'=> 'nullable|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
         ];
     }
 

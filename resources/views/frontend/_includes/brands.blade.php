@@ -11,7 +11,7 @@
                     <div class="swiper-wrapper">
                         @foreach ($__partners as $partner)
                         <div class="swiper-slide">
-                            <img src="{{ publicSrc($partner->avatar) }}" alt="{{ $partner->company }}" class="inline-block">
+                            <img style="width:150px; height: 100px" src="{{ publicSrc($partner->avatar) }}" alt="{{ $partner->company }}" class="inline-block">
                         </div>
                         @endforeach
                     </div>

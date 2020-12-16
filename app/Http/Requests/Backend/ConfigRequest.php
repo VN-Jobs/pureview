@@ -10,7 +10,7 @@ class ConfigRequest extends Request
     {
         return [
             'name.*' => 'required',
-            'logo.*' => 'nullable|bail|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+            'logo.*' => 'nullable|bail|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
             'email.*' => 'email',
             'map.*' => 'url',
             'facebook.*' => 'nullable|url',
@@ -18,11 +18,11 @@ class ConfigRequest extends Request
             'linkedin.*' => 'nullable|url',
             'twitter.*' => 'nullable|url',
             'instagram.*' => 'nullable|url',
-            'about.banner' => 'nullable|bail|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
-            'blog.banner' => 'nullable|bail|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
-            'contact.banner' => 'nullable|bail|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
-            'contact.banner_1' => 'nullable|bail|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
-            'contact.banner_2' => 'nullable|bail|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+            'about.banner' => 'nullable|bail|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+            'blog.banner' => 'nullable|bail|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+            'contact.banner' => 'nullable|bail|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+            'contact.banner_1' => 'nullable|bail|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+            'contact.banner_2' => 'nullable|bail|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
         ];
     }
 

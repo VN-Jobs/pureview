@@ -6,7 +6,7 @@
                     @if (count($slides))
                         @foreach ($slides as $slide)
                         <div class="swiper-slide">
-                            <img src="{{ publicSrc($slide->image_src) }}" alt="{{ $slide->title }}">
+                            <img class="w-full h-auto" src="{{ publicSrc($slide->image_src) }}" alt="{{ $slide->title }}">
                             <div class="slide__overlay"></div>
                         </div>
                         @endforeach

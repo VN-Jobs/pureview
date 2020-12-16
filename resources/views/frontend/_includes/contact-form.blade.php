@@ -1,5 +1,5 @@
 @if (Session::has('contact_flash_message'))
-    <div class="alert alert-success">{{ Session::get('contact_flash_message') }}</div>
+    <div class="alert alert-success text-green-500">{{ Session::get('contact_flash_message') }}</div>
 @endif
 
 {{ Form::open([

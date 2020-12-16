@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Contracts\Repositories\PostRepository;
 use App\Contracts\Repositories\CategoryRepository;
 use App\Contracts\Repositories\SlideRepository;
+use App\Http\Requests\Frontend\ContactRequest;
+use App\Jobs\Contact\UserStoreJob;
 
 class HomeController extends FrontendController
 {

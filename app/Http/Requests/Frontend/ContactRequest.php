@@ -16,6 +16,7 @@ class ContactRequest extends Request
         return [
             'name' => 'required|min:2|max:175',
             'email' => 'required|email|max:255',
+            'phone' => 'nullable|regex:/(01)[0-9]{9}/',
             'message' => 'required',
         ];
     }
@@ -36,6 +37,7 @@ class ContactRequest extends Request
         return [
             'name' => __('repositories.label.first_name'),
             'email' => __('repositories.label.email'),
+            'phone' => __('repositories.label.phone'),
             'message' => __('repositories.label.contact_message'),
         ];
     }

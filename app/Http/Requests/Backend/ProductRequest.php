@@ -17,16 +17,16 @@ class ProductRequest extends Request
             return [
                 'name' => 'required|min:2|max:175',
                 'category_id' => 'required|integer|not_in:0',
-                'image_before_src'=> 'nullable|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
-                'image_after_src'=> 'nullable|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+                'image_before_src'=> 'nullable|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+                'image_after_src'=> 'nullable|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
                 'sort'=> 'nullable|integer',
             ];
         } else {
             return [
                 'name' => 'required|min:2|max:175',
                 'category_id' => 'required|integer|not_in:0',
-                'image_before_src'=> 'required|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
-                'image_after_src'=> 'required|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+                'image_before_src'=> 'required|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+                'image_after_src'=> 'required|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
                 'sort'=> 'nullable|integer',
             ];
         }

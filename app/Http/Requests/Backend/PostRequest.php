@@ -19,7 +19,7 @@ class PostRequest extends Request
                 'ceo_title' => 'nullable|max:200',
                 'ceo_description' => 'nullable|max:250',
                 'ceo_keywords' => 'nullable|max:150',
-                'image'=> 'nullable|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+                'image'=> 'nullable|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
             ];
         } else {
             return [
@@ -27,7 +27,7 @@ class PostRequest extends Request
                 'ceo_title' => 'nullable|max:200',
                 'ceo_description' => 'nullable|max:250',
                 'ceo_keywords' => 'nullable|max:150',
-                'image'=> 'required|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+                'image'=> 'required|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
             ];
         }
     }

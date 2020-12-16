@@ -18,7 +18,7 @@ class CategoryRequest extends Request
                 'ceo_title' => 'required|min:2|max:100',
                 'name' => 'required|min:2|max:100',
                 'locked' => 'sometimes|boolean',
-                'image'=> 'nullable|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+                'image'=> 'nullable|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
                 'link_youtube' => 'array',
                 'link_youtube.*' => 'nullable|url',
             ];
@@ -28,7 +28,7 @@ class CategoryRequest extends Request
                 'name' => 'required|min:2|max:100',
                 'locked' => 'sometimes|boolean',
                 'type' => 'required|in:' . implode(',', config('common.category.type')),
-                'image' => 'required|image|mimes:jpeg,jpg,gif,bmp,png|max:1200',
+                'image' => 'required|file|mimes:jpeg,jpg,gif,bmp,png|max:1200',
                 'link_youtube' => 'array',
                 'link_youtube.*' => 'nullable|url',
             ];

@@ -6,7 +6,7 @@
                     <div class="footer-col__container">
                         <div class="flex-shrink-0 flex items-center justify-center sm:justify-normal">
                             <a href="{{ route('frontend.home.index') }}">
-                                <img src="{{ publicSrc($configs['logo'][0] ?? null) }}" alt="logo" style="width: 64px; height:64px;">
+                                <img src="{{ publicSrc($configs['logo'][0] ?? null) }}" alt="logo" style="width: 120px; height:120px;">
                             </a>
                         </div>
                         <p class="mt-2">{{ $configs['home']['how_to'][3]['description'] ?? null }}</p>

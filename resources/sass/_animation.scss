@@ -233,3 +233,51 @@
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
+
+@-webkit-keyframes animate_left_to_right {
+    0% {
+        -webkit-transform: translateY(-35%)scaleY(0);
+        transform: translateY(-35%)scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0)scaleY(1);
+        transform: translateY(0)scaleY(1);
+    }
+}
+
+@keyframes animate_left_to_right {
+    0% {
+        -webkit-transform: translateY(-35%)scaleY(0);
+        transform: translateY(-35%)scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0)scaleY(1);
+        transform: translateY(0)scaleY(1);
+    }
+}
+
+@-webkit-keyframes animate_right_to_left {
+    0% {
+        -webkit-transform: translateY(35%)scaleY(0);
+        transform: translateY(35%)scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0)scaleY(1);
+        transform: translateY(0)scaleY(1);
+    }
+}
+
+@keyframes animate_right_to_left {
+    0% {
+        -webkit-transform: translateY(35%)scaleY(0);
+        transform: translateY(35%)scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0)scaleY(1);
+        transform: translateY(0)scaleY(1);
+    }
+}

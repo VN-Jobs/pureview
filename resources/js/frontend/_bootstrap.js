@@ -1,12 +1,9 @@
 require('alpinejs');
-window._ = require('lodash');
+// window._ = require('lodash');
 window.$ = window.jQuery = require('jquery');
 require('jquery-ui/ui/effect.js');
 window.swiper = require('swiper/bundle');
-window.Isotope = require('isotope-layout');
-window.videojs = require('video.js').default;
-require('videojs-plus');
-require('imagesloaded');
+window.slick = require('slick-carousel');
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

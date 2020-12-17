@@ -3,7 +3,7 @@
 @section('title', __('Service detail page'))
 
 @push('sufscripts')
-<script src="{{ asset('vendor/nanogallery2/jquery.nanogallery2.js?v=' . env('APP_VERSION')) }}"></script>
+{{-- <script src="{{ asset('vendor/nanogallery2/jquery.nanogallery2.js?v=' . env('APP_VERSION')) }}"></script> --}}
 <script src="{{ asset('js/frontend/pages/service-detail.js?v=' . env('APP_VERSION')) }}"></script>
 @endpush
 
@@ -22,46 +22,38 @@
         <div class="container mx-auto px-0">
             <div class="flex flex-col max-w-7xl mx-auto px-4 mb-10">
                 <!-- Main after/before slides -->
-                <div class="swiper-container gallery-top">
-                    <div class="swiper-wrapper">
-                        @foreach ($services as $service)
-                        <div class="swiper-slide">
-                            <div class="ba__container">
-                                <img src="{{ publicSrc($service->image_before_src) }}" class="" alt="{{ $service->image_before_title }}">
+                <div class="gallery-container gallery-top">
+                    @foreach ($services as $service)
+                    <div class="gallery-slide">
+                        <div class="ba__container">
+                            <img src="{{ publicSrc($service->image_before_src) }}" class="" alt="{{ $service->image_before_title }}" />
 
-                                <div class="resize">
-                                    <img src="{{ publicSrc($service->image_after_src) }}" class="" alt="{{ $service->image_after_title }}">
-                                </div>
-
-                                <span class="handle">
-                                    <span class="handle__wrapper">
-                                        <i class="las la-arrows-alt-h"></i>
-                                    </span>
-                                </span>
-                                <a href="#" class="button prev"><i class="las la-long-arrow-alt-left mr-2"></i>BEFORE</a>
-                                <a href="#" class="button reset"><i class="las la-grip-lines-vertical mr-2"></i>RESET</a>
-                                <a href="#" class="button next"><i class="las la-long-arrow-alt-right mr-2"></i>AFTER</a>
+                            <div class="resize">
+                                <img src="{{ publicSrc($service->image_after_src) }}" class="" alt="{{ $service->image_after_title }}" />
                             </div>
+
+                            <span class="handle">
+                                <span class="handle__wrapper">
+                                    <i class="las la-arrows-alt-h"></i>
+                                </span>
+                            </span>
+                            <a href="#" class="button next">AFTER</a>
+                            {{-- <a href="#" class="button reset"><i class="las la-grip-lines-vertical mr-2"></i>RESET</a> --}}
+                            <a href="#" class="button prev">BEFORE</a>
                         </div>
-                        @endforeach
                     </div>
+                    @endforeach
                 </div>
 
                 <!-- Thumbs slides -->
-                <div class="swiper-container gallery-thumbs swiper__nav__style">
-                    <div class="swiper-wrapper">
-                        @foreach ($services as $service)
-                        <div class="swiper-slide">
-                            <img src="{{ publicSrc($service->image_before_src) }}" class="" alt="{{ $service->image_before_title }}">
+                <div class="gallery-container gallery-thumbs gallery__nav__style">
+                    @foreach ($services as $service)
+                    <div class="gallery-slide">
+                        <div class="gallery-slide-wrapper">
+                            <img src="{{ publicSrc($service->image_after_src) }}" class="" alt="{{ $service->image_after_title }}" />
                         </div>
-                        @endforeach
                     </div>
-                    <div class="swiper-button-next">
-                        <i class="las la-angle-right la-1x"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="las la-angle-left la-1x"></i>
-                    </div>
+                    @endforeach
                 </div>
             </div>
 

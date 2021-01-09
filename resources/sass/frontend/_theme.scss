@@ -49,6 +49,14 @@ button,
     font-size: 14px;
 }
 
+.site__logo {
+    img,
+    svg {
+        width: 90px;
+        height: auto;
+    }
+}
+
 // Menu
 .site__navigation__primary {
     ul.nav__wrapper {
@@ -109,8 +117,8 @@ button,
 
         > .nav__item {
             > .nav__link {
-                padding-top: 2rem;
-                padding-bottom: 2rem;
+                padding-top: 2.6rem;
+                padding-bottom: 2.6rem;
                 text-transform: capitalize;
 
                 &:hover,
@@ -184,7 +192,7 @@ button,
     .site__logo {
         img,
         svg {
-            height: 3rem;
+            width: 60px;
         }
     }
 
@@ -301,13 +309,13 @@ a {
         display: inline-block;
         position: absolute;
         bottom: 15px;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 18px;
         letter-spacing: 2.8px;
-        font-weight: 300;
+        font-weight: 600;
         color: #111;
         background-color: #fff;
-        padding: 10px 15px;
+        padding: 5px 15px;
         min-width: 115px;
         text-align: center;
         text-transform: uppercase;
@@ -381,18 +389,6 @@ a {
     .swiper-slide-active {
         .img-wrapper {
             position: relative;
-
-            &::before {
-                content: "";
-                height: 100%;
-                left: 0;
-                opacity: 0.5;
-                position: absolute;
-                top: 0;
-                width: 100%;
-                z-index: 1;
-                background: rgba(51, 51, 51, 0.6);
-            }
         }
     }
 
@@ -624,8 +620,8 @@ a {
     margin-top: -19px;
     right: auto;
     top: 50%;
-    font-size: 14px;
-    padding: 10px 15px;
+    font-size: 12px;
+    padding: 5px 15px;
     line-height: 18px;
 
     &:hover {
@@ -697,8 +693,8 @@ a {
         right: auto;
         top: auto;
         bottom: 20px;
-        font-size: 14px;
-        padding: 10px 15px;
+        font-size: 12px;
+        padding: 5px 15px;
         line-height: 18px;
 
         &:hover {

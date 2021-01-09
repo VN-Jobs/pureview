@@ -140,7 +140,7 @@
         });
 
         $(galleryThumbsEl).slick({
-            slidesToShow: 6,
+            slidesToShow: 8,
             slidesToScroll: 1,
             speed: 300,
             asNavFor: galleryTopEl,
@@ -150,7 +150,7 @@
                 {
                     breakpoint: 1199,
                     settings: {
-                        slidesToShow: 5,
+                        slidesToShow: 6,
                     }
                 },
                 {

@@ -20,7 +20,7 @@
     <!-- Section: Single Service -->
     <section class="single__service pt-24">
         <div class="container mx-auto px-0">
-            <div class="flex flex-col max-w-7xl mx-auto px-4 mb-10">
+            <div class="flex flex-col mx-auto px-4 mb-10" style="max-width: 970px;">
                 <!-- Main after/before slides -->
                 <div class="gallery-container gallery-top">
                     @foreach ($services as $service)
